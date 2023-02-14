@@ -1,0 +1,84 @@
+Performing C SOURCE FILE Test SUPPORTS_LLD failed with the following output:
+Change Dir: /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/CMakeFiles/CMakeScratch/TryCompile-jgrq2g
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_5acdb/fast && /usr/bin/make  -f CMakeFiles/cmTC_5acdb.dir/build.make CMakeFiles/cmTC_5acdb.dir/build
+make[1]: Entering directory '/home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/CMakeFiles/CMakeScratch/TryCompile-jgrq2g'
+Building C object CMakeFiles/cmTC_5acdb.dir/src.c.o
+/usr/lib/ccache/cc -DSUPPORTS_LLD  -fuse-ld=lld -fPIE -std=c11 -o CMakeFiles/cmTC_5acdb.dir/src.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/CMakeFiles/CMakeScratch/TryCompile-jgrq2g/src.c
+cc: error: unrecognized command line option ‘-fuse-ld=lld’
+CMakeFiles/cmTC_5acdb.dir/build.make:77: recipe for target 'CMakeFiles/cmTC_5acdb.dir/src.c.o' failed
+make[1]: *** [CMakeFiles/cmTC_5acdb.dir/src.c.o] Error 1
+make[1]: Leaving directory '/home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/CMakeFiles/CMakeScratch/TryCompile-jgrq2g'
+Makefile:127: recipe for target 'cmTC_5acdb/fast' failed
+make: *** [cmTC_5acdb/fast] Error 2
+
+
+Source file was:
+int main() {}
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/CMakeFiles/CMakeScratch/TryCompile-j4kL7s
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_51a61/fast && /usr/bin/make  -f CMakeFiles/cmTC_51a61.dir/build.make CMakeFiles/cmTC_51a61.dir/build
+make[1]: Entering directory '/home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/CMakeFiles/CMakeScratch/TryCompile-j4kL7s'
+Building C object CMakeFiles/cmTC_51a61.dir/src.c.o
+/usr/lib/ccache/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fPIE -std=c11 -o CMakeFiles/cmTC_51a61.dir/src.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/CMakeFiles/CMakeScratch/TryCompile-j4kL7s/src.c
+Linking C executable cmTC_51a61
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_51a61.dir/link.txt --verbose=1
+/usr/lib/ccache/cc CMakeFiles/cmTC_51a61.dir/src.c.o -o cmTC_51a61 
+CMakeFiles/cmTC_51a61.dir/src.c.o: In function `main':
+src.c:(.text+0x3e): undefined reference to `pthread_create'
+src.c:(.text+0x4a): undefined reference to `pthread_detach'
+src.c:(.text+0x56): undefined reference to `pthread_cancel'
+src.c:(.text+0x67): undefined reference to `pthread_join'
+src.c:(.text+0x7b): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_51a61.dir/build.make:98: recipe for target 'cmTC_51a61' failed
+make[1]: *** [cmTC_51a61] Error 1
+make[1]: Leaving directory '/home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/CMakeFiles/CMakeScratch/TryCompile-j4kL7s'
+Makefile:127: recipe for target 'cmTC_51a61/fast' failed
+make: *** [cmTC_51a61/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/CMakeFiles/CMakeScratch/TryCompile-k2gP9R
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3eab9/fast && /usr/bin/make  -f CMakeFiles/cmTC_3eab9.dir/build.make CMakeFiles/cmTC_3eab9.dir/build
+make[1]: Entering directory '/home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/CMakeFiles/CMakeScratch/TryCompile-k2gP9R'
+Building C object CMakeFiles/cmTC_3eab9.dir/CheckFunctionExists.c.o
+/usr/lib/ccache/cc   -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE -std=c11 -o CMakeFiles/cmTC_3eab9.dir/CheckFunctionExists.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/CMakeFiles/CMakeScratch/TryCompile-k2gP9R/CheckFunctionExists.c
+Linking C executable cmTC_3eab9
+/usr/local/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3eab9.dir/link.txt --verbose=1
+/usr/lib/ccache/cc  -DCHECK_FUNCTION_EXISTS=pthread_create CMakeFiles/cmTC_3eab9.dir/CheckFunctionExists.c.o -o cmTC_3eab9  -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_3eab9.dir/build.make:98: recipe for target 'cmTC_3eab9' failed
+make[1]: *** [cmTC_3eab9] Error 1
+make[1]: Leaving directory '/home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/CMakeFiles/CMakeScratch/TryCompile-k2gP9R'
+Makefile:127: recipe for target 'cmTC_3eab9/fast' failed
+make: *** [cmTC_3eab9/fast] Error 2
+
+
+
