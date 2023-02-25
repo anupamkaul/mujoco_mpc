@@ -5,11 +5,11 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/render/glad/glad.c.o: \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/stdarg.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
@@ -36,7 +36,7 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/render/glad/glad.c.o: \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/src/engine/engine_util_errmem.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/include/mujoco/mjexport.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/src/render/glad/glad.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/stdint.h /usr/include/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h /usr/include/dlfcn.h \
  /usr/include/x86_64-linux-gnu/bits/dlfcn.h /usr/include/link.h \
  /usr/include/elf.h /usr/include/x86_64-linux-gnu/bits/auxv.h \

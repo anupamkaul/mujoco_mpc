@@ -1,3 +1,9 @@
-#!/bin/bash
+# !/bin/sh
 
-cmake ../mjpc/
+# rm -rf ./build; mkdir build; 
+# cp Run.sh ./build/
+# cd build
+
+/usr/local/bin/cmake ../mjpc/
+
+# make -j8

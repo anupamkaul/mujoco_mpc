@@ -3,8 +3,8 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/engine/engine_sensor.c.o: \
  /usr/include/stdc-predef.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/src/engine/engine_sensor.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/include/mujoco/mjdata.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/stddef.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/stdint.h /usr/include/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \

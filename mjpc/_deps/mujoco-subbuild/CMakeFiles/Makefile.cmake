@@ -10,8 +10,10 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.25.2/CMakeSystem.cmake"
   "CMakeLists.txt"
   "mujoco-populate-prefix/tmp/mujoco-populate-mkdirs.cmake"
+  "/usr/local/share/cmake-3.25/Modules/CMakeDetermineSystem.cmake"
   "/usr/local/share/cmake-3.25/Modules/CMakeGenericSystem.cmake"
   "/usr/local/share/cmake-3.25/Modules/CMakeInitializeConfigs.cmake"
+  "/usr/local/share/cmake-3.25/Modules/CMakeSystem.cmake.in"
   "/usr/local/share/cmake-3.25/Modules/CMakeSystemSpecificInformation.cmake"
   "/usr/local/share/cmake-3.25/Modules/CMakeSystemSpecificInitialize.cmake"
   "/usr/local/share/cmake-3.25/Modules/ExternalProject.cmake"
@@ -32,6 +34,7 @@ set(CMAKE_MAKEFILE_OUTPUTS
 
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
+  "CMakeFiles/3.25.2/CMakeSystem.cmake"
   "mujoco-populate-prefix/tmp/mujoco-populate-mkdirs.cmake"
   "mujoco-populate-prefix/tmp/mujoco-populate-gitclone.cmake"
   "mujoco-populate-prefix/src/mujoco-populate-stamp/mujoco-populate-gitinfo.txt"

@@ -6,5 +6,5 @@ CXX_DEFINES = -DmjUSEPLATFORMSIMD
 
 CXX_INCLUDES = -I/home/anupam/github_robotics/simulator/mujoco_mpc/mjpc -I/home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/abseil-cpp-src -I/home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/include
 
-CXX_FLAGS = -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fdata-sections -ffunction-sections -mavx -Wno-int-in-bool-context -Wno-maybe-uninitialized -Wno-sign-compare -Wno-stringop-overflow -Wno-stringop-truncation -std=c++2a
+CXX_FLAGS = -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -fdata-sections -ffunction-sections -mavx -Wno-int-in-bool-context -Wno-maybe-uninitialized -Wno-sign-compare -Wno-stringop-overflow -Wno-stringop-truncation -Wno-strict-aliasing -Wno-unused-but-set-variable -std=c++2a
 

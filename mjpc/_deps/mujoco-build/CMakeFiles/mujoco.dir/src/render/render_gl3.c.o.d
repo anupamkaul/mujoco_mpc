@@ -22,11 +22,11 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/render/render_gl3.c.o: \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathinline.h /usr/include/stdio.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
  /usr/include/x86_64-linux-gnu/bits/types.h \
  /usr/include/x86_64-linux-gnu/bits/typesizes.h /usr/include/libio.h \
  /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/stdarg.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
@@ -52,7 +52,7 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/render/render_gl3.c.o: \
  /usr/include/x86_64-linux-gnu/bits/stdlib.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/include/mujoco/mujoco.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/include/mujoco/mjdata.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/stdint.h /usr/include/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/include/mujoco/mjplugin.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/include/mujoco/mjui.h \

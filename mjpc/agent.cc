@@ -287,8 +287,12 @@ void Agent::Gui(mjUI& ui) {
     mjuiDef defNormWeight[kMaxCostTerms + 1];
     for (int i = 0; i < task_.num_cost; i++) {
       // element
-      defNormWeight[i] = {mjITEM_SLIDERNUM, "weight", 2,
-                          DataAt(task_.weight, i), "0 1"};
+      // original code: aggregate initialization with c++20 (gcc 9.0 reports undefined operator = for mjuidef_ and braced_initializer list operands) 
+      //defNormWeight[i] = {mjITEM_SLIDERNUM, "weight", 2, DataAt(task_.weight, i), "0 1"};
+
+      // workaround: list initialization using braced list (works with gcc-9.0, not fully c++20 compliant)
+      mjuiDef tmpelem{mjITEM_SLIDERNUM, "weight", 2, DataAt(task_.weight, i), "0 1"};
+      defNormWeight[i] = tmpelem;
 
       // name
       mju::strcpy_arr(defNormWeight[i].name,
@@ -307,12 +311,25 @@ void Agent::Gui(mjUI& ui) {
   int parameter_shift = (task_.residual_parameters.empty() ? 0 : 1);
   mjuiDef defFeatureParameters[kMaxCostTerms + 2];
   if (parameter_shift > 0) {
-    defFeatureParameters[0] = {mjITEM_SEPARATOR, "Residual Parameters", 1};
+
+    mjuiDef tmpelem{mjITEM_SEPARATOR, "Parameters", 1};
+    defFeatureParameters[0] = tmpelem;
+
+    // original code:
+    // defFeatureParameters[0] = {mjITEM_SEPARATOR, "Parameters", 1};
   }
   for (int i = 0; i < task_.residual_parameters.size(); i++) {
-    defFeatureParameters[i + parameter_shift] = {
+
+     mjuiDef tmpelem{
         mjITEM_SLIDERNUM, "residual", 2, DataAt(task_.residual_parameters, i),
-        "0 1"};
+       "0 1"};
+
+     defFeatureParameters[i + parameter_shift] = tmpelem;
+
+    // original code
+    // defFeatureParameters[i + parameter_shift] = {
+    //    mjITEM_SLIDERNUM, "residual", 2, DataAt(task_.residual_parameters, i),
+    //    "0 1"};
   }
 
   int shift = 0;

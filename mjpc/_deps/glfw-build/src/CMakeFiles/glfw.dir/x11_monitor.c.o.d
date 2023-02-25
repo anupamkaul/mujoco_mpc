@@ -4,8 +4,8 @@ _deps/glfw-build/src/CMakeFiles/glfw.dir/x11_monitor.c.o: \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/glfw-src/src/internal.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/glfw-build/src/glfw_config.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/glfw-src/src/../include/GLFW/glfw3.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include/stdint.h /usr/include/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
@@ -26,7 +26,7 @@ _deps/glfw-build/src/CMakeFiles/glfw.dir/x11_monitor.c.o: \
  /usr/include/X11/keysymdef.h /usr/include/X11/Xatom.h \
  /usr/include/X11/Xcursor/Xcursor.h /usr/include/stdio.h \
  /usr/include/libio.h /usr/include/_G_config.h /usr/include/wchar.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdarg.h \
  /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
@@ -73,9 +73,8 @@ _deps/glfw-build/src/CMakeFiles/glfw.dir/x11_monitor.c.o: \
  /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
  /usr/include/asm-generic/posix_types.h \
  /usr/include/linux/input-event-codes.h /usr/include/linux/limits.h \
- /usr/include/regex.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h \
- /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h \
+ /usr/include/regex.h /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h \
  /usr/include/limits.h /usr/include/stdlib.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \

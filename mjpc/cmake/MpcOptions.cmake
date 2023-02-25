@@ -94,6 +94,8 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "GNU" OR (CMAKE_CXX_COMPILER_ID MATCHES "Clang
         -Wno-sign-compare
         -Wno-stringop-overflow
         -Wno-stringop-truncation
+        -Wno-strict-aliasing
+        -Wno-unused-but-set-variable
     )
   elseif(CMAKE_CXX_COMPILER_ID MATCHES "Clang" AND CMAKE_CXX_COMPILER_VERSION VERSION_GREATER_EQUAL "15.0.0")
     # Needed for https://github.com/abseil/abseil-cpp/issues/1201, until a new

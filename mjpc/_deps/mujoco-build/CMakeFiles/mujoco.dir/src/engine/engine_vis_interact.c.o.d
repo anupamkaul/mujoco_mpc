@@ -3,8 +3,8 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/engine/engine_vis_interact.c.o: \
  /usr/include/stdc-predef.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/src/engine/engine_vis_interact.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/include/mujoco/mjdata.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/stddef.h \
- /usr/lib/gcc/x86_64-linux-gnu/8/include/stdint.h /usr/include/stdint.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
+ /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
@@ -24,6 +24,10 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/engine/engine_vis_interact.c.o: \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/src/engine/engine_core_smooth.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/src/engine/engine_io.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/src/engine/engine_macro.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/src/engine/engine_callback.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/src/engine/engine_ray.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/src/engine/engine_support.h \
  /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/_deps/mujoco-src/src/engine/engine_util_blas.h \
