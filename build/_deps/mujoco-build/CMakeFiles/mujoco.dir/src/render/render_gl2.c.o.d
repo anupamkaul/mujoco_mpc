@@ -1,12 +1,12 @@
 _deps/mujoco-build/CMakeFiles/mujoco.dir/src/render/render_gl2.c.o: \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/render/render_gl2.c \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/render/render_gl2.c \
  /usr/include/stdc-predef.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/render/render_gl2.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjexport.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjrender.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjmodel.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjtnum.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjvisualize.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/render/render_gl2.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjexport.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjrender.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjmodel.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjtnum.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjvisualize.h \
  /usr/include/string.h /usr/include/features.h \
  /usr/include/x86_64-linux-gnu/sys/cdefs.h \
  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
@@ -27,7 +27,7 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/render/render_gl2.c.o: \
  /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
  /usr/include/x86_64-linux-gnu/bits/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/stdio2.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mujoco.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mujoco.h \
  /usr/include/x86_64-linux-gnu/bits/waitflags.h \
  /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
  /usr/include/x86_64-linux-gnu/sys/types.h /usr/include/time.h \
@@ -51,10 +51,10 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/render/render_gl2.c.o: \
  /usr/include/x86_64-linux-gnu/bits/mathdef.h \
  /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
  /usr/include/x86_64-linux-gnu/bits/mathinline.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjdata.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjdata.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjplugin.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjui.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/engine/engine_array_safety.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/render/glad/glad.h
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjplugin.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjui.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/engine/engine_array_safety.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/render/glad/glad.h

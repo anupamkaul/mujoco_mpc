@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 # Include any dependencies generated for this target.
 include _deps/qhull-build/CMakeFiles/qconvex.dir/depend.make
@@ -70,18 +70,18 @@ include _deps/qhull-build/CMakeFiles/qconvex.dir/progress.make
 include _deps/qhull-build/CMakeFiles/qconvex.dir/flags.make
 
 _deps/qhull-build/CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.o: _deps/qhull-build/CMakeFiles/qconvex.dir/flags.make
-_deps/qhull-build/CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/qconvex/qconvex.c
+_deps/qhull-build/CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/qconvex/qconvex.c
 _deps/qhull-build/CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.o: _deps/qhull-build/CMakeFiles/qconvex.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/qhull-build/CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/qhull-build/CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.o -MF CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.o.d -o CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/qconvex/qconvex.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/qhull-build/CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/qhull-build/CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.o -MF CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.o.d -o CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/qconvex/qconvex.c
 
 _deps/qhull-build/CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/qconvex/qconvex.c > CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/qconvex/qconvex.c > CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.i
 
 _deps/qhull-build/CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/qconvex/qconvex.c -o CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/qconvex/qconvex.c -o CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.s
 
 # Object files for target qconvex
 qconvex_OBJECTS = \
@@ -94,18 +94,18 @@ bin/qconvex: _deps/qhull-build/CMakeFiles/qconvex.dir/src/qconvex/qconvex.c.o
 bin/qconvex: _deps/qhull-build/CMakeFiles/qconvex.dir/build.make
 bin/qconvex: lib/libqhullstatic.a
 bin/qconvex: _deps/qhull-build/CMakeFiles/qconvex.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/qconvex"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qconvex.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/qconvex"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qconvex.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/qhull-build/CMakeFiles/qconvex.dir/build: bin/qconvex
 .PHONY : _deps/qhull-build/CMakeFiles/qconvex.dir/build
 
 _deps/qhull-build/CMakeFiles/qconvex.dir/clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && $(CMAKE_COMMAND) -P CMakeFiles/qconvex.dir/cmake_clean.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && $(CMAKE_COMMAND) -P CMakeFiles/qconvex.dir/cmake_clean.cmake
 .PHONY : _deps/qhull-build/CMakeFiles/qconvex.dir/clean
 
 _deps/qhull-build/CMakeFiles/qconvex.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build/CMakeFiles/qconvex.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build/CMakeFiles/qconvex.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/qhull-build/CMakeFiles/qconvex.dir/depend
 

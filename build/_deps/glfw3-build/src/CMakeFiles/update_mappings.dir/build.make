@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 # Utility rule file for update_mappings.
 
@@ -67,8 +67,8 @@ include _deps/glfw3-build/src/CMakeFiles/update_mappings.dir/compiler_depend.mak
 include _deps/glfw3-build/src/CMakeFiles/update_mappings.dir/progress.make
 
 _deps/glfw3-build/src/CMakeFiles/update_mappings:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/glfw3-src/src && /usr/local/bin/cmake -P /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/glfw3-src/CMake/GenerateMappings.cmake mappings.h.in mappings.h
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Updating gamepad mappings from upstream repository"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/glfw3-src/src && /usr/local/bin/cmake -P /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/glfw3-src/CMake/GenerateMappings.cmake mappings.h.in mappings.h
 
 update_mappings: _deps/glfw3-build/src/CMakeFiles/update_mappings
 update_mappings: _deps/glfw3-build/src/CMakeFiles/update_mappings.dir/build.make
@@ -79,10 +79,10 @@ _deps/glfw3-build/src/CMakeFiles/update_mappings.dir/build: update_mappings
 .PHONY : _deps/glfw3-build/src/CMakeFiles/update_mappings.dir/build
 
 _deps/glfw3-build/src/CMakeFiles/update_mappings.dir/clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/glfw3-build/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/glfw3-build/src && $(CMAKE_COMMAND) -P CMakeFiles/update_mappings.dir/cmake_clean.cmake
 .PHONY : _deps/glfw3-build/src/CMakeFiles/update_mappings.dir/clean
 
 _deps/glfw3-build/src/CMakeFiles/update_mappings.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/glfw3-src/src /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/glfw3-build/src /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/glfw3-build/src/CMakeFiles/update_mappings.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/glfw3-src/src /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/glfw3-build/src /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/glfw3-build/src/CMakeFiles/update_mappings.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/glfw3-build/src/CMakeFiles/update_mappings.dir/depend
 

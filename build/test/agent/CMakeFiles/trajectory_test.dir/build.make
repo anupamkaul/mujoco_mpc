@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 # Include any dependencies generated for this target.
 include test/agent/CMakeFiles/trajectory_test.dir/depend.make
@@ -70,18 +70,18 @@ include test/agent/CMakeFiles/trajectory_test.dir/progress.make
 include test/agent/CMakeFiles/trajectory_test.dir/flags.make
 
 test/agent/CMakeFiles/trajectory_test.dir/trajectory_test.cc.o: test/agent/CMakeFiles/trajectory_test.dir/flags.make
-test/agent/CMakeFiles/trajectory_test.dir/trajectory_test.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/agent/trajectory_test.cc
+test/agent/CMakeFiles/trajectory_test.dir/trajectory_test.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/agent/trajectory_test.cc
 test/agent/CMakeFiles/trajectory_test.dir/trajectory_test.cc.o: test/agent/CMakeFiles/trajectory_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/agent/CMakeFiles/trajectory_test.dir/trajectory_test.cc.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/agent && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/agent/CMakeFiles/trajectory_test.dir/trajectory_test.cc.o -MF CMakeFiles/trajectory_test.dir/trajectory_test.cc.o.d -o CMakeFiles/trajectory_test.dir/trajectory_test.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/agent/trajectory_test.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/agent/CMakeFiles/trajectory_test.dir/trajectory_test.cc.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/agent && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/agent/CMakeFiles/trajectory_test.dir/trajectory_test.cc.o -MF CMakeFiles/trajectory_test.dir/trajectory_test.cc.o.d -o CMakeFiles/trajectory_test.dir/trajectory_test.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/agent/trajectory_test.cc
 
 test/agent/CMakeFiles/trajectory_test.dir/trajectory_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/trajectory_test.dir/trajectory_test.cc.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/agent && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/agent/trajectory_test.cc > CMakeFiles/trajectory_test.dir/trajectory_test.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/agent && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/agent/trajectory_test.cc > CMakeFiles/trajectory_test.dir/trajectory_test.cc.i
 
 test/agent/CMakeFiles/trajectory_test.dir/trajectory_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/trajectory_test.dir/trajectory_test.cc.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/agent && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/agent/trajectory_test.cc -o CMakeFiles/trajectory_test.dir/trajectory_test.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/agent && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/agent/trajectory_test.cc -o CMakeFiles/trajectory_test.dir/trajectory_test.cc.s
 
 # Object files for target trajectory_test
 trajectory_test_OBJECTS = \
@@ -144,18 +144,18 @@ bin/trajectory_test: lib/libabsl_log_severity.a
 bin/trajectory_test: lib/libabsl_spinlock_wait.a
 bin/trajectory_test: lib/libgtest.a
 bin/trajectory_test: test/agent/CMakeFiles/trajectory_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/trajectory_test"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/agent && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/trajectory_test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/trajectory_test"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/agent && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/trajectory_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/agent/CMakeFiles/trajectory_test.dir/build: bin/trajectory_test
 .PHONY : test/agent/CMakeFiles/trajectory_test.dir/build
 
 test/agent/CMakeFiles/trajectory_test.dir/clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/agent && $(CMAKE_COMMAND) -P CMakeFiles/trajectory_test.dir/cmake_clean.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/agent && $(CMAKE_COMMAND) -P CMakeFiles/trajectory_test.dir/cmake_clean.cmake
 .PHONY : test/agent/CMakeFiles/trajectory_test.dir/clean
 
 test/agent/CMakeFiles/trajectory_test.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/agent /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/agent /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/agent/CMakeFiles/trajectory_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/agent /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/agent /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/agent/CMakeFiles/trajectory_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/agent/CMakeFiles/trajectory_test.dir/depend
 

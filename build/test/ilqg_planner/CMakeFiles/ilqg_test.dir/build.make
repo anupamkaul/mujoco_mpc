@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 # Include any dependencies generated for this target.
 include test/ilqg_planner/CMakeFiles/ilqg_test.dir/depend.make
@@ -70,18 +70,18 @@ include test/ilqg_planner/CMakeFiles/ilqg_test.dir/progress.make
 include test/ilqg_planner/CMakeFiles/ilqg_test.dir/flags.make
 
 test/ilqg_planner/CMakeFiles/ilqg_test.dir/ilqg_test.cc.o: test/ilqg_planner/CMakeFiles/ilqg_test.dir/flags.make
-test/ilqg_planner/CMakeFiles/ilqg_test.dir/ilqg_test.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/ilqg_planner/ilqg_test.cc
+test/ilqg_planner/CMakeFiles/ilqg_test.dir/ilqg_test.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/ilqg_planner/ilqg_test.cc
 test/ilqg_planner/CMakeFiles/ilqg_test.dir/ilqg_test.cc.o: test/ilqg_planner/CMakeFiles/ilqg_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/ilqg_planner/CMakeFiles/ilqg_test.dir/ilqg_test.cc.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/ilqg_planner && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/ilqg_planner/CMakeFiles/ilqg_test.dir/ilqg_test.cc.o -MF CMakeFiles/ilqg_test.dir/ilqg_test.cc.o.d -o CMakeFiles/ilqg_test.dir/ilqg_test.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/ilqg_planner/ilqg_test.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/ilqg_planner/CMakeFiles/ilqg_test.dir/ilqg_test.cc.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/ilqg_planner && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/ilqg_planner/CMakeFiles/ilqg_test.dir/ilqg_test.cc.o -MF CMakeFiles/ilqg_test.dir/ilqg_test.cc.o.d -o CMakeFiles/ilqg_test.dir/ilqg_test.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/ilqg_planner/ilqg_test.cc
 
 test/ilqg_planner/CMakeFiles/ilqg_test.dir/ilqg_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ilqg_test.dir/ilqg_test.cc.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/ilqg_planner && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/ilqg_planner/ilqg_test.cc > CMakeFiles/ilqg_test.dir/ilqg_test.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/ilqg_planner && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/ilqg_planner/ilqg_test.cc > CMakeFiles/ilqg_test.dir/ilqg_test.cc.i
 
 test/ilqg_planner/CMakeFiles/ilqg_test.dir/ilqg_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ilqg_test.dir/ilqg_test.cc.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/ilqg_planner && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/ilqg_planner/ilqg_test.cc -o CMakeFiles/ilqg_test.dir/ilqg_test.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/ilqg_planner && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/ilqg_planner/ilqg_test.cc -o CMakeFiles/ilqg_test.dir/ilqg_test.cc.s
 
 # Object files for target ilqg_test
 ilqg_test_OBJECTS = \
@@ -145,18 +145,18 @@ bin/ilqg_test: lib/libabsl_raw_logging_internal.a
 bin/ilqg_test: lib/libabsl_log_severity.a
 bin/ilqg_test: lib/libgtest.a
 bin/ilqg_test: test/ilqg_planner/CMakeFiles/ilqg_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/ilqg_test"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/ilqg_planner && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ilqg_test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/ilqg_test"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/ilqg_planner && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ilqg_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/ilqg_planner/CMakeFiles/ilqg_test.dir/build: bin/ilqg_test
 .PHONY : test/ilqg_planner/CMakeFiles/ilqg_test.dir/build
 
 test/ilqg_planner/CMakeFiles/ilqg_test.dir/clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/ilqg_planner && $(CMAKE_COMMAND) -P CMakeFiles/ilqg_test.dir/cmake_clean.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/ilqg_planner && $(CMAKE_COMMAND) -P CMakeFiles/ilqg_test.dir/cmake_clean.cmake
 .PHONY : test/ilqg_planner/CMakeFiles/ilqg_test.dir/clean
 
 test/ilqg_planner/CMakeFiles/ilqg_test.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/ilqg_planner /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/ilqg_planner /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/ilqg_planner/CMakeFiles/ilqg_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/ilqg_planner /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/ilqg_planner /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/ilqg_planner/CMakeFiles/ilqg_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/ilqg_planner/CMakeFiles/ilqg_test.dir/depend
 

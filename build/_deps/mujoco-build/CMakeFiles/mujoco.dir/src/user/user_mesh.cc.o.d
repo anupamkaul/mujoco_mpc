@@ -1,5 +1,5 @@
 _deps/mujoco-build/CMakeFiles/mujoco.dir/src/user/user_mesh.cc.o: \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/user/user_mesh.cc \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/user/user_mesh.cc \
  /usr/include/stdc-predef.h /usr/include/c++/9/algorithm \
  /usr/include/c++/9/utility \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
@@ -167,40 +167,40 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/user/user_mesh.cc.o: \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/sstream \
  /usr/include/c++/9/istream /usr/include/c++/9/bits/istream.tcc \
  /usr/include/c++/9/bits/sstream.tcc \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjmodel.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjtnum.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/cc/array_safety.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjmodel.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjtnum.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/cc/array_safety.h \
  /usr/include/c++/9/cstdarg \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/engine/engine_crossplatform.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/engine/engine_crossplatform.h \
  /usr/include/c++/9/stdlib.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/engine/engine_file.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/engine/engine_macro.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/engine/engine_callback.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjdata.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjexport.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/engine/engine_util_blas.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/engine/engine_file.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/engine/engine_macro.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/engine/engine_callback.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjdata.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjexport.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/engine/engine_util_blas.h \
  /usr/include/c++/9/math.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/engine/engine_util_errmem.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/engine/engine_util_solve.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/engine/engine_util_spatial.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/engine/engine_vfs.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/user/user_model.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjplugin.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjvisualize.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/user/user_objects.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/engine/engine_util_errmem.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/engine/engine_util_solve.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/engine/engine_util_spatial.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/engine/engine_vfs.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/user/user_model.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjplugin.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjvisualize.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/user/user_objects.h \
  /usr/include/c++/9/map /usr/include/c++/9/bits/stl_tree.h \
  /usr/include/c++/9/bits/stl_map.h /usr/include/c++/9/bits/stl_multimap.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-src/lodepng.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/user/user_util.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/tinyobjloader-src/tiny_obj_loader.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-src/lodepng.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/user/user_util.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/tinyobjloader-src/tiny_obj_loader.h \
  /usr/include/c++/9/cassert /usr/include/assert.h \
  /usr/include/c++/9/fstream /usr/include/c++/9/bits/codecvt.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/basic_file.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++io.h \
  /usr/include/c++/9/bits/fstream.tcc \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/libqhull_r/qhull_ra.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/libqhull_r/libqhull_r.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/libqhull_r/user_r.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/libqhull_r/qhull_ra.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/libqhull_r/libqhull_r.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/libqhull_r/user_r.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h \
@@ -209,11 +209,11 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/user/user_mesh.cc.o: \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/libqhull_r/mem_r.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/libqhull_r/qset_r.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/libqhull_r/stat_r.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/libqhull_r/random_r.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/libqhull_r/geom_r.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/libqhull_r/merge_r.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/libqhull_r/poly_r.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/libqhull_r/io_r.h
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/libqhull_r/mem_r.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/libqhull_r/qset_r.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/libqhull_r/stat_r.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/libqhull_r/random_r.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/libqhull_r/geom_r.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/libqhull_r/merge_r.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/libqhull_r/poly_r.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/libqhull_r/io_r.h

@@ -1,10 +1,10 @@
 _deps/mujoco-build/CMakeFiles/mujoco.dir/src/engine/engine_plugin.cc.o: \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/engine/engine_plugin.cc \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/engine/engine_plugin.cc \
  /usr/include/stdc-predef.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/engine/engine_plugin.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjexport.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjplugin.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjdata.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/engine/engine_plugin.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjexport.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjplugin.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjdata.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -12,9 +12,9 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/engine/engine_plugin.cc.o: \
  /usr/include/x86_64-linux-gnu/gnu/stubs.h \
  /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
  /usr/include/x86_64-linux-gnu/bits/wchar.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjtnum.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjmodel.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjvisualize.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjtnum.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjmodel.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjvisualize.h \
  /usr/include/c++/9/atomic /usr/include/c++/9/bits/atomic_base.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -135,4 +135,4 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/engine/engine_plugin.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
  /usr/include/linux/limits.h /usr/include/dlfcn.h \
  /usr/include/x86_64-linux-gnu/bits/dlfcn.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/engine/engine_util_errmem.h
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/engine/engine_util_errmem.h

@@ -1,4 +1,4 @@
-# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,12 +44,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/tasks/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/tasks/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/test/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -60,5 +60,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/anupam/github_robotics/simulator/mujoco_mpc/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

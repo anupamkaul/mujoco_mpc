@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 # Include any dependencies generated for this target.
 include _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/depend.make
@@ -70,46 +70,46 @@ include _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/progress.
 include _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/flags.make
 
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o: _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/flags.make
-_deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate/glfw_adapter.cc
+_deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate/glfw_adapter.cc
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o: _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o -MF CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o.d -o CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate/glfw_adapter.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o -MF CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o.d -o CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate/glfw_adapter.cc
 
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate/glfw_adapter.cc > CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate/glfw_adapter.cc > CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.i
 
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate/glfw_adapter.cc -o CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate/glfw_adapter.cc -o CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.s
 
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o: _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/flags.make
-_deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate/glfw_dispatch.cc
+_deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate/glfw_dispatch.cc
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o: _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o -MF CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o.d -o CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate/glfw_dispatch.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o -MF CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o.d -o CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate/glfw_dispatch.cc
 
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate/glfw_dispatch.cc > CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate/glfw_dispatch.cc > CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.i
 
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate/glfw_dispatch.cc -o CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate/glfw_dispatch.cc -o CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.s
 
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.o: _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/flags.make
-_deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate/platform_ui_adapter.cc
+_deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate/platform_ui_adapter.cc
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.o: _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.o -MF CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.o.d -o CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate/platform_ui_adapter.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.o -MF CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.o.d -o CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate/platform_ui_adapter.cc
 
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate/platform_ui_adapter.cc > CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate/platform_ui_adapter.cc > CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.i
 
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate/platform_ui_adapter.cc -o CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/simulate && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate/platform_ui_adapter.cc -o CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.s
 
 platform_ui_adapter: _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o
 platform_ui_adapter: _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o
@@ -122,10 +122,10 @@ _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build: platform_u
 .PHONY : _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build
 
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/simulate && $(CMAKE_COMMAND) -P CMakeFiles/platform_ui_adapter.dir/cmake_clean.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/simulate && $(CMAKE_COMMAND) -P CMakeFiles/platform_ui_adapter.dir/cmake_clean.cmake
 .PHONY : _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/clean
 
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/simulate /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/simulate /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 # Include any dependencies generated for this target.
 include _deps/qhull-build/CMakeFiles/user_eg.dir/depend.make
@@ -70,18 +70,18 @@ include _deps/qhull-build/CMakeFiles/user_eg.dir/progress.make
 include _deps/qhull-build/CMakeFiles/user_eg.dir/flags.make
 
 _deps/qhull-build/CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.o: _deps/qhull-build/CMakeFiles/user_eg.dir/flags.make
-_deps/qhull-build/CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/user_eg/user_eg_r.c
+_deps/qhull-build/CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/user_eg/user_eg_r.c
 _deps/qhull-build/CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.o: _deps/qhull-build/CMakeFiles/user_eg.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/qhull-build/CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/qhull-build/CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.o -MF CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.o.d -o CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/user_eg/user_eg_r.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/qhull-build/CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/qhull-build/CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.o -MF CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.o.d -o CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/user_eg/user_eg_r.c
 
 _deps/qhull-build/CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/user_eg/user_eg_r.c > CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/user_eg/user_eg_r.c > CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.i
 
 _deps/qhull-build/CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/user_eg/user_eg_r.c -o CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/user_eg/user_eg_r.c -o CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.s
 
 # Object files for target user_eg
 user_eg_OBJECTS = \
@@ -94,18 +94,18 @@ bin/user_eg: _deps/qhull-build/CMakeFiles/user_eg.dir/src/user_eg/user_eg_r.c.o
 bin/user_eg: _deps/qhull-build/CMakeFiles/user_eg.dir/build.make
 bin/user_eg: lib/libqhullstatic_r.a
 bin/user_eg: _deps/qhull-build/CMakeFiles/user_eg.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/user_eg"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/user_eg.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/user_eg"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/user_eg.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/qhull-build/CMakeFiles/user_eg.dir/build: bin/user_eg
 .PHONY : _deps/qhull-build/CMakeFiles/user_eg.dir/build
 
 _deps/qhull-build/CMakeFiles/user_eg.dir/clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && $(CMAKE_COMMAND) -P CMakeFiles/user_eg.dir/cmake_clean.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && $(CMAKE_COMMAND) -P CMakeFiles/user_eg.dir/cmake_clean.cmake
 .PHONY : _deps/qhull-build/CMakeFiles/user_eg.dir/clean
 
 _deps/qhull-build/CMakeFiles/user_eg.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build/CMakeFiles/user_eg.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build/CMakeFiles/user_eg.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/qhull-build/CMakeFiles/user_eg.dir/depend
 

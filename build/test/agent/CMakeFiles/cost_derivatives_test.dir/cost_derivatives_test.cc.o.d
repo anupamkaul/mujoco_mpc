@@ -1,7 +1,7 @@
 test/agent/CMakeFiles/cost_derivatives_test.dir/cost_derivatives_test.cc.o: \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/agent/cost_derivatives_test.cc \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/agent/cost_derivatives_test.cc \
  /usr/include/stdc-predef.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/gtest.h \
  /usr/include/c++/9/cstddef \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -147,15 +147,15 @@ test/agent/CMakeFiles/cost_derivatives_test.dir/cost_derivatives_test.cc.o: \
  /usr/include/c++/9/bits/erase_if.h /usr/include/c++/9/vector \
  /usr/include/c++/9/bits/stl_vector.h \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/gtest-assertion-result.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/gtest-message.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port.h \
  /usr/include/c++/9/stdlib.h /usr/include/string.h \
  /usr/include/x86_64-linux-gnu/bits/string3.h /usr/include/c++/9/iostream \
  /usr/include/x86_64-linux-gnu/sys/stat.h \
  /usr/include/x86_64-linux-gnu/bits/stat.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-port.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-port-arch.h \
  /usr/include/strings.h /usr/include/unistd.h \
  /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
  /usr/include/x86_64-linux-gnu/bits/environments.h \
@@ -166,16 +166,16 @@ test/agent/CMakeFiles/cost_derivatives_test.dir/cost_derivatives_test.cc.o: \
  /usr/include/c++/9/bits/std_mutex.h \
  /usr/include/c++/9/bits/unique_lock.h /usr/include/c++/9/mutex \
  /usr/include/c++/9/any /usr/include/c++/9/variant \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/gtest-death-test.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-death-test-internal.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/gtest-matchers.h \
  /usr/include/c++/9/atomic \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/gtest-printers.h \
  /usr/include/c++/9/functional /usr/include/c++/9/bits/std_function.h \
  /usr/include/c++/9/unordered_map /usr/include/c++/9/bits/hashtable.h \
  /usr/include/c++/9/bits/hashtable_policy.h \
  /usr/include/c++/9/bits/unordered_map.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-internal.h \
  /usr/include/x86_64-linux-gnu/sys/wait.h /usr/include/signal.h \
  /usr/include/x86_64-linux-gnu/bits/signum.h \
  /usr/include/x86_64-linux-gnu/bits/siginfo.h \
@@ -186,18 +186,18 @@ test/agent/CMakeFiles/cost_derivatives_test.dir/cost_derivatives_test.cc.o: \
  /usr/include/x86_64-linux-gnu/bits/sigthread.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/float.h /usr/include/c++/9/map \
  /usr/include/c++/9/bits/stl_map.h /usr/include/c++/9/bits/stl_multimap.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-filepath.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-string.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-type-util.h \
  /usr/include/c++/9/cxxabi.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/cxxabi_tweaks.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/internal/custom/gtest-printers.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/gtest-param-test.h \
  /usr/include/c++/9/iterator /usr/include/c++/9/bits/stream_iterator.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/internal/gtest-param-util.h \
  /usr/include/c++/9/cassert /usr/include/assert.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/../../mjpc/test/finite_difference.h
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/gtest-test-part.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/gtest-typed-test.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/gtest_pred_impl.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include/gtest/gtest_prod.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/../../mjpc/test/finite_difference.h

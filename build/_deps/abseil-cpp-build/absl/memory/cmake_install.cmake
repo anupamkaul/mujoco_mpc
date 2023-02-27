@@ -1,4 +1,4 @@
-# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/abseil-cpp-src/absl/memory
+# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/abseil-cpp-src/absl/memory
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

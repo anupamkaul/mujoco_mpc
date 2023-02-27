@@ -1,4 +1,4 @@
-# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test
+# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,31 +44,31 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/sampling_planner/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/test/sampling_planner/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/gradient_planner/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/test/gradient_planner/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/ilqg_planner/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/test/ilqg_planner/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/tasks/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/test/tasks/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/state/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/test/state/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/agent/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/test/agent/cmake_install.cmake")
 endif()
 

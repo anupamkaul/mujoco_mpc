@@ -22,8 +22,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(menagerie-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/deepmind/mujoco_menagerie.git" "GIT_TAG" "main"
-                    SOURCE_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/menagerie-src"
-                    BINARY_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/menagerie-build"
+                    SOURCE_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/menagerie-src"
+                    BINARY_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/menagerie-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

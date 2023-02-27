@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 # Utility rule file for Continuous.
 
@@ -67,7 +67,7 @@ include _deps/tinyxml2-build/CMakeFiles/Continuous.dir/compiler_depend.make
 include _deps/tinyxml2-build/CMakeFiles/Continuous.dir/progress.make
 
 _deps/tinyxml2-build/CMakeFiles/Continuous:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/tinyxml2-build && /usr/local/bin/ctest -D Continuous
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/tinyxml2-build && /usr/local/bin/ctest -D Continuous
 
 Continuous: _deps/tinyxml2-build/CMakeFiles/Continuous
 Continuous: _deps/tinyxml2-build/CMakeFiles/Continuous.dir/build.make
@@ -78,10 +78,10 @@ _deps/tinyxml2-build/CMakeFiles/Continuous.dir/build: Continuous
 .PHONY : _deps/tinyxml2-build/CMakeFiles/Continuous.dir/build
 
 _deps/tinyxml2-build/CMakeFiles/Continuous.dir/clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/tinyxml2-build && $(CMAKE_COMMAND) -P CMakeFiles/Continuous.dir/cmake_clean.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/tinyxml2-build && $(CMAKE_COMMAND) -P CMakeFiles/Continuous.dir/cmake_clean.cmake
 .PHONY : _deps/tinyxml2-build/CMakeFiles/Continuous.dir/clean
 
 _deps/tinyxml2-build/CMakeFiles/Continuous.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/tinyxml2-src /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/tinyxml2-build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/tinyxml2-build/CMakeFiles/Continuous.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/tinyxml2-src /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/tinyxml2-build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/tinyxml2-build/CMakeFiles/Continuous.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/tinyxml2-build/CMakeFiles/Continuous.dir/depend
 

@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/simulate//CMakeFiles/progress.marks
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/mujoco-build/simulate/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles 0
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/simulate//CMakeFiles/progress.marks
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/mujoco-build/simulate/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/mujoco-build/simulate/clean
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/mujoco-build/simulate/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,23 +158,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/mujoco-build/simulate/preinstall
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/mujoco-build/simulate/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/mujoco-build/simulate/preinstall
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/mujoco-build/simulate/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles/VerifyGlobs.cmake
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/rule
 .PHONY : _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ platform_ui_adapter: _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.
 
 # fast build rule for target.
 platform_ui_adapter/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build
 .PHONY : platform_ui_adapter/fast
 
 # Convenience name for target.
 _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/rule
 .PHONY : _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/rule
 
 # Convenience name for target.
@@ -197,12 +197,12 @@ libsimulate: _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/rule
 
 # fast build rule for target.
 libsimulate/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/build
 .PHONY : libsimulate/fast
 
 # Convenience name for target.
 _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/rule
 .PHONY : _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/rule
 
 # Convenience name for target.
@@ -211,7 +211,7 @@ simulate: _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/rule
 
 # fast build rule for target.
 simulate/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/build
 .PHONY : simulate/fast
 
 glfw_adapter.o: glfw_adapter.cc.o
@@ -219,7 +219,7 @@ glfw_adapter.o: glfw_adapter.cc.o
 
 # target to build an object file
 glfw_adapter.cc.o:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.o
 .PHONY : glfw_adapter.cc.o
 
 glfw_adapter.i: glfw_adapter.cc.i
@@ -227,7 +227,7 @@ glfw_adapter.i: glfw_adapter.cc.i
 
 # target to preprocess a source file
 glfw_adapter.cc.i:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.i
 .PHONY : glfw_adapter.cc.i
 
 glfw_adapter.s: glfw_adapter.cc.s
@@ -235,7 +235,7 @@ glfw_adapter.s: glfw_adapter.cc.s
 
 # target to generate assembly for a file
 glfw_adapter.cc.s:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_adapter.cc.s
 .PHONY : glfw_adapter.cc.s
 
 glfw_dispatch.o: glfw_dispatch.cc.o
@@ -243,7 +243,7 @@ glfw_dispatch.o: glfw_dispatch.cc.o
 
 # target to build an object file
 glfw_dispatch.cc.o:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o
 .PHONY : glfw_dispatch.cc.o
 
 glfw_dispatch.i: glfw_dispatch.cc.i
@@ -251,7 +251,7 @@ glfw_dispatch.i: glfw_dispatch.cc.i
 
 # target to preprocess a source file
 glfw_dispatch.cc.i:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.i
 .PHONY : glfw_dispatch.cc.i
 
 glfw_dispatch.s: glfw_dispatch.cc.s
@@ -259,7 +259,7 @@ glfw_dispatch.s: glfw_dispatch.cc.s
 
 # target to generate assembly for a file
 glfw_dispatch.cc.s:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.s
 .PHONY : glfw_dispatch.cc.s
 
 main.o: main.cc.o
@@ -267,7 +267,7 @@ main.o: main.cc.o
 
 # target to build an object file
 main.cc.o:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/main.cc.o
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/main.cc.o
 .PHONY : main.cc.o
 
 main.i: main.cc.i
@@ -275,7 +275,7 @@ main.i: main.cc.i
 
 # target to preprocess a source file
 main.cc.i:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/main.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/main.cc.i
 .PHONY : main.cc.i
 
 main.s: main.cc.s
@@ -283,7 +283,7 @@ main.s: main.cc.s
 
 # target to generate assembly for a file
 main.cc.s:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/main.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/simulate.dir/main.cc.s
 .PHONY : main.cc.s
 
 platform_ui_adapter.o: platform_ui_adapter.cc.o
@@ -291,7 +291,7 @@ platform_ui_adapter.o: platform_ui_adapter.cc.o
 
 # target to build an object file
 platform_ui_adapter.cc.o:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.o
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.o
 .PHONY : platform_ui_adapter.cc.o
 
 platform_ui_adapter.i: platform_ui_adapter.cc.i
@@ -299,7 +299,7 @@ platform_ui_adapter.i: platform_ui_adapter.cc.i
 
 # target to preprocess a source file
 platform_ui_adapter.cc.i:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.i
 .PHONY : platform_ui_adapter.cc.i
 
 platform_ui_adapter.s: platform_ui_adapter.cc.s
@@ -307,7 +307,7 @@ platform_ui_adapter.s: platform_ui_adapter.cc.s
 
 # target to generate assembly for a file
 platform_ui_adapter.cc.s:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/platform_ui_adapter.cc.s
 .PHONY : platform_ui_adapter.cc.s
 
 simulate.o: simulate.cc.o
@@ -315,7 +315,7 @@ simulate.o: simulate.cc.o
 
 # target to build an object file
 simulate.cc.o:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/simulate.cc.o
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/simulate.cc.o
 .PHONY : simulate.cc.o
 
 simulate.i: simulate.cc.i
@@ -323,7 +323,7 @@ simulate.i: simulate.cc.i
 
 # target to preprocess a source file
 simulate.cc.i:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/simulate.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/simulate.cc.i
 .PHONY : simulate.cc.i
 
 simulate.s: simulate.cc.s
@@ -331,7 +331,7 @@ simulate.s: simulate.cc.s
 
 # target to generate assembly for a file
 simulate.cc.s:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/simulate.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/build.make _deps/mujoco-build/simulate/CMakeFiles/libsimulate.dir/simulate.cc.s
 .PHONY : simulate.cc.s
 
 # Help Target
@@ -376,7 +376,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles/VerifyGlobs.cmake
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

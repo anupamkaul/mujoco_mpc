@@ -1,4 +1,4 @@
-# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/glfw3-src
+# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/glfw3-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,6 +44,6 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/glfw3-build/src/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/glfw3-build/src/cmake_install.cmake")
 endif()
 

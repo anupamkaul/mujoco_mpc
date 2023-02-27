@@ -1,10 +1,10 @@
 _deps/mujoco-build/CMakeFiles/mujoco.dir/src/xml/xml_api.cc.o: \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/xml/xml_api.cc \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/xml/xml_api.cc \
  /usr/include/stdc-predef.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/xml/xml_api.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjexport.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjmodel.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjtnum.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/xml/xml_api.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjexport.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjmodel.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjtnum.h \
  /usr/include/c++/9/cstring \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -164,23 +164,23 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/xml/xml_api.cc.o: \
  /usr/include/c++/9/numeric /usr/include/c++/9/bits/stl_numeric.h \
  /usr/include/c++/9/pstl/glue_numeric_defs.h \
  /usr/include/c++/9/pstl/execution_defs.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/user/user_model.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjdata.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjplugin.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjvisualize.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/user/user_objects.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/user/user_model.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjdata.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjplugin.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjvisualize.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/user/user_objects.h \
  /usr/include/c++/9/map /usr/include/c++/9/bits/stl_tree.h \
  /usr/include/c++/9/ext/aligned_buffer.h \
  /usr/include/c++/9/bits/node_handle.h /usr/include/c++/9/optional \
  /usr/include/c++/9/bits/enable_special_members.h \
  /usr/include/c++/9/bits/stl_map.h /usr/include/c++/9/bits/stl_multimap.h \
  /usr/include/c++/9/bits/erase_if.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-src/lodepng.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/xml/xml.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/xml/xml_native_reader.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-src/lodepng.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/xml/xml.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/xml/xml_native_reader.h \
  /usr/include/c++/9/sstream /usr/include/c++/9/bits/sstream.tcc \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/xml/xml_base.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/tinyxml2-src/tinyxml2.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/xml/xml_base.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/tinyxml2-src/tinyxml2.h \
  /usr/include/c++/9/climits \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/limits.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/syslimits.h \
@@ -189,4 +189,4 @@ _deps/mujoco-build/CMakeFiles/mujoco.dir/src/xml/xml_api.cc.o: \
  /usr/include/linux/limits.h \
  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/src/xml/xml_util.h
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/src/xml/xml_util.h

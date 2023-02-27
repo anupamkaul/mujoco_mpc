@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 # Utility rule file for copy_menagerie_resources.
 
@@ -67,10 +67,10 @@ include CMakeFiles/copy_menagerie_resources.dir/compiler_depend.make
 include CMakeFiles/copy_menagerie_resources.dir/progress.make
 
 CMakeFiles/copy_menagerie_resources:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying menagerie assets into binary directory"
-	/usr/local/bin/cmake -E copy_directory /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/menagerie-src/shadow_hand/assets /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/tasks/hand/assets
-	/usr/local/bin/cmake -E copy_directory /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/menagerie-src/franka_emika_panda/assets /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/tasks/panda/assets
-	/usr/local/bin/cmake -E copy_directory /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/menagerie-src/unitree_a1/assets /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/tasks/quadruped/assets
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Copying menagerie assets into binary directory"
+	/usr/local/bin/cmake -E copy_directory /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/menagerie-src/shadow_hand/assets /home/anupam/github_robotics/simulator/mujoco_mpc/build/tasks/hand/assets
+	/usr/local/bin/cmake -E copy_directory /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/menagerie-src/franka_emika_panda/assets /home/anupam/github_robotics/simulator/mujoco_mpc/build/tasks/panda/assets
+	/usr/local/bin/cmake -E copy_directory /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/menagerie-src/unitree_a1/assets /home/anupam/github_robotics/simulator/mujoco_mpc/build/tasks/quadruped/assets
 
 copy_menagerie_resources: CMakeFiles/copy_menagerie_resources
 copy_menagerie_resources: CMakeFiles/copy_menagerie_resources.dir/build.make
@@ -85,6 +85,6 @@ CMakeFiles/copy_menagerie_resources.dir/clean:
 .PHONY : CMakeFiles/copy_menagerie_resources.dir/clean
 
 CMakeFiles/copy_menagerie_resources.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles/copy_menagerie_resources.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles/copy_menagerie_resources.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/copy_menagerie_resources.dir/depend
 

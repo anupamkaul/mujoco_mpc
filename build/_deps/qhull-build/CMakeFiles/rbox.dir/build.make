@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 # Include any dependencies generated for this target.
 include _deps/qhull-build/CMakeFiles/rbox.dir/depend.make
@@ -70,18 +70,18 @@ include _deps/qhull-build/CMakeFiles/rbox.dir/progress.make
 include _deps/qhull-build/CMakeFiles/rbox.dir/flags.make
 
 _deps/qhull-build/CMakeFiles/rbox.dir/src/rbox/rbox.c.o: _deps/qhull-build/CMakeFiles/rbox.dir/flags.make
-_deps/qhull-build/CMakeFiles/rbox.dir/src/rbox/rbox.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/rbox/rbox.c
+_deps/qhull-build/CMakeFiles/rbox.dir/src/rbox/rbox.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/rbox/rbox.c
 _deps/qhull-build/CMakeFiles/rbox.dir/src/rbox/rbox.c.o: _deps/qhull-build/CMakeFiles/rbox.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/qhull-build/CMakeFiles/rbox.dir/src/rbox/rbox.c.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/qhull-build/CMakeFiles/rbox.dir/src/rbox/rbox.c.o -MF CMakeFiles/rbox.dir/src/rbox/rbox.c.o.d -o CMakeFiles/rbox.dir/src/rbox/rbox.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/rbox/rbox.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/qhull-build/CMakeFiles/rbox.dir/src/rbox/rbox.c.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/qhull-build/CMakeFiles/rbox.dir/src/rbox/rbox.c.o -MF CMakeFiles/rbox.dir/src/rbox/rbox.c.o.d -o CMakeFiles/rbox.dir/src/rbox/rbox.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/rbox/rbox.c
 
 _deps/qhull-build/CMakeFiles/rbox.dir/src/rbox/rbox.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/rbox.dir/src/rbox/rbox.c.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/rbox/rbox.c > CMakeFiles/rbox.dir/src/rbox/rbox.c.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/rbox/rbox.c > CMakeFiles/rbox.dir/src/rbox/rbox.c.i
 
 _deps/qhull-build/CMakeFiles/rbox.dir/src/rbox/rbox.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/rbox.dir/src/rbox/rbox.c.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/rbox/rbox.c -o CMakeFiles/rbox.dir/src/rbox/rbox.c.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/rbox/rbox.c -o CMakeFiles/rbox.dir/src/rbox/rbox.c.s
 
 # Object files for target rbox
 rbox_OBJECTS = \
@@ -94,18 +94,18 @@ bin/rbox: _deps/qhull-build/CMakeFiles/rbox.dir/src/rbox/rbox.c.o
 bin/rbox: _deps/qhull-build/CMakeFiles/rbox.dir/build.make
 bin/rbox: lib/libqhullstatic.a
 bin/rbox: _deps/qhull-build/CMakeFiles/rbox.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/rbox"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rbox.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/rbox"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/rbox.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/qhull-build/CMakeFiles/rbox.dir/build: bin/rbox
 .PHONY : _deps/qhull-build/CMakeFiles/rbox.dir/build
 
 _deps/qhull-build/CMakeFiles/rbox.dir/clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && $(CMAKE_COMMAND) -P CMakeFiles/rbox.dir/cmake_clean.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && $(CMAKE_COMMAND) -P CMakeFiles/rbox.dir/cmake_clean.cmake
 .PHONY : _deps/qhull-build/CMakeFiles/rbox.dir/clean
 
 _deps/qhull-build/CMakeFiles/rbox.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build/CMakeFiles/rbox.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build/CMakeFiles/rbox.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/qhull-build/CMakeFiles/rbox.dir/depend
 

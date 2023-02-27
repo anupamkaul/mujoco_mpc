@@ -1,4 +1,4 @@
-# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src
+# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -43,17 +43,17 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/lib/libccd.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/anupam/github_robotics/simulator/mujoco_mpc/build/lib/libccd.a")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/ccd" TYPE FILE FILES
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/ccd/ccd.h"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/ccd/compiler.h"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/ccd/ccd_export.h"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/ccd/quat.h"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/ccd/vec3.h"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src/ccd/config.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/ccd/ccd.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/ccd/compiler.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/ccd/ccd_export.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/ccd/quat.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/ccd/vec3.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src/ccd/config.h"
     )
 endif()
 
@@ -61,7 +61,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ccd/ccd-targets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ccd/ccd-targets.cmake"
-         "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src/CMakeFiles/Export/1ec81c47dcc60201f3455480ce4c19b2/ccd-targets.cmake")
+         "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src/CMakeFiles/Export/1ec81c47dcc60201f3455480ce4c19b2/ccd-targets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/ccd/ccd-targets-*.cmake")
       if(_cmake_old_config_files)
@@ -74,9 +74,9 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ccd" TYPE FILE FILES "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src/CMakeFiles/Export/1ec81c47dcc60201f3455480ce4c19b2/ccd-targets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ccd" TYPE FILE FILES "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src/CMakeFiles/Export/1ec81c47dcc60201f3455480ce4c19b2/ccd-targets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ccd" TYPE FILE FILES "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src/CMakeFiles/Export/1ec81c47dcc60201f3455480ce4c19b2/ccd-targets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ccd" TYPE FILE FILES "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src/CMakeFiles/Export/1ec81c47dcc60201f3455480ce4c19b2/ccd-targets-release.cmake")
   endif()
 endif()
 

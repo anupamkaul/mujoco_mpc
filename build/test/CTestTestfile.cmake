@@ -1,6 +1,6 @@
 # CMake generated Testfile for 
-# Source directory: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test
-# Build directory: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test
+# Source directory: /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test
+# Build directory: /home/anupam/github_robotics/simulator/mujoco_mpc/build/test
 # 
 # This file includes the relevant testing commands required for 
 # testing this directory and lists subdirectories to be tested as well.

@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/abseil-cpp-build/absl/utility//CMakeFiles/progress.marks
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/abseil-cpp-build/absl/utility/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles 0
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/abseil-cpp-build/absl/utility//CMakeFiles/progress.marks
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/abseil-cpp-build/absl/utility/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/abseil-cpp-build/absl/utility/clean
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/abseil-cpp-build/absl/utility/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,18 +158,18 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/abseil-cpp-build/absl/utility/preinstall
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/abseil-cpp-build/absl/utility/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/abseil-cpp-build/absl/utility/preinstall
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/abseil-cpp-build/absl/utility/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles/VerifyGlobs.cmake
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Help Target
@@ -196,7 +196,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles/VerifyGlobs.cmake
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -4,7 +4,7 @@
 # compile CXX with /usr/lib/ccache/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src -I/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/libqhull_r
+CXX_INCLUDES = -I/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src -I/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/libqhull_r
 
 CXX_FLAGS = -O3 -DNDEBUG -fPIE -fvisibility=hidden -fvisibility-inlines-hidden -fdata-sections -ffunction-sections -std=c++17
 

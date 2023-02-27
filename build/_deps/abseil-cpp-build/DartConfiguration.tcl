@@ -4,8 +4,8 @@
 
 
 # Configuration directories and files
-SourceDirectory: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/abseil-cpp-src
-BuildDirectory: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/abseil-cpp-build
+SourceDirectory: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/abseil-cpp-src
+BuildDirectory: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/abseil-cpp-build
 
 # Where to place the cost data store
 CostDataFile: 
@@ -27,7 +27,7 @@ SubmitInactivityTimeout:
 NightlyStartTime: 00:00:00 EDT
 
 # Commands for the build/test/submit cycle
-ConfigureCommand: "/usr/local/bin/cmake" "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/abseil-cpp-src"
+ConfigureCommand: "/usr/local/bin/cmake" "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/abseil-cpp-src"
 MakeCommand: /usr/local/bin/cmake --build . --config "${CTEST_CONFIGURATION_TYPE}"
 DefaultCTestConfigurationType: Release
 

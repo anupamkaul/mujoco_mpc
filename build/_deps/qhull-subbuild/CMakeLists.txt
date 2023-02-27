@@ -22,8 +22,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(qhull-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/qhull/qhull.git" "GIT_TAG" "0c8fc90d2037588024d9964515c1e684f6007ecc" "GIT_SHALLOW" "FALSE" "PATCH_COMMAND"
-                    SOURCE_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src"
-                    BINARY_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build"
+                    SOURCE_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src"
+                    BINARY_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

@@ -1,0 +1,65 @@
+https://quuxplusone.github.io/blog/2022/06/03/aggregate-parens-init-considered-kinda-bad/
+
+# how to upgrade to gcc-10 with ubuntu (doesn't work for 16.04, only have till 9.0)
+https://gcc.gnu.org/gcc-10/changes.html
+
+# the actual problem .. we pull in a .h from deepmind's mujoco (in build/_deps)  where mjui.h has a struct without initializers / constructors
+# then agent.cc assumes a class like initialization with braces. It doesn't work (why) 
+
+https://stackoverflow.com/questions/24751567/error-when-initializing-a-struct-with-a-brace-enclosed-initializer-list
+
+https://stackoverflow.com/questions/60273556/return-brace-enclosed-initializer-list-as-struct
+
+# the latest c++ spec on aggregate initialization:
+https://en.cppreference.com/w/cpp/language/aggregate_initialization
+
+# back to basics:
+https://www.learncpp.com/cpp-tutorial/struct-aggregate-initialization/
+
+# fixed with my solution of using list brace (minus the = operand and a temp variable)
+
+# next: on type-punning (dereferencing breaks strict aliasing error):
+https://www.ibm.com/docs/en/ztpf/1.1.0.15?topic=warnings-type-pun-problems
+
+# more in-depth:
+https://accu.org/journals/overload/28/160/anonymous/
+
+# (note: reinterpret_cast could be unsafe. Use memcopy or bitset as suggested by the articles above)
+
+# going to clang-14:
+https://clang.llvm.org/get_started.html
+
+# fixed with my solution of WNo-error-strict-aliasing
+
+# finally to always merge upstream to origin (merge and resolve conflicts):
+https://www.c-sharpcorner.com/article/how-to-merge-upstream-repository-changes-with-your-fork-repository-using-git/
+https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/addressing-merge-conflicts/resolving-a-merge-conflict-using-the-command-line
+
+cd local-repo
+git checkout master (or your branch)
+git remote add upstream <your upstream path>
+git fetch upstream
+git merge upstream/master      (or git merge upstream/branch <your local branch - implicit when checked out>)
+
+now if there are merge conflicts, git status will point out those
+simply open those files and search for the patterns:
+>>>>> HEAD
+(text in your code)
+====
+(text in upstream code)
+<<<< (something)
+
+now apply your judgement and see what you want to take
+
+then git add <modified-files>
+do your checks
+then git commit
+git push origin master <or the branch you were merging with upstream>
+
+
+
+
+
+
+
+

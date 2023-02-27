@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 # Utility rule file for uninstall.
 
@@ -67,8 +67,8 @@ include _deps/qhull-build/CMakeFiles/uninstall.dir/compiler_depend.make
 include _deps/qhull-build/CMakeFiles/uninstall.dir/progress.make
 
 _deps/qhull-build/CMakeFiles/uninstall:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "uninstall Qhull by deleting files in install_manifest.txt"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && cat install_manifest.txt | tr -d "\r" | xargs -r rm
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "uninstall Qhull by deleting files in install_manifest.txt"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && cat install_manifest.txt | tr -d "\r" | xargs -r rm
 
 uninstall: _deps/qhull-build/CMakeFiles/uninstall
 uninstall: _deps/qhull-build/CMakeFiles/uninstall.dir/build.make
@@ -79,10 +79,10 @@ _deps/qhull-build/CMakeFiles/uninstall.dir/build: uninstall
 .PHONY : _deps/qhull-build/CMakeFiles/uninstall.dir/build
 
 _deps/qhull-build/CMakeFiles/uninstall.dir/clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && $(CMAKE_COMMAND) -P CMakeFiles/uninstall.dir/cmake_clean.cmake
 .PHONY : _deps/qhull-build/CMakeFiles/uninstall.dir/clean
 
 _deps/qhull-build/CMakeFiles/uninstall.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build/CMakeFiles/uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/qhull-build/CMakeFiles/uninstall.dir/depend
 

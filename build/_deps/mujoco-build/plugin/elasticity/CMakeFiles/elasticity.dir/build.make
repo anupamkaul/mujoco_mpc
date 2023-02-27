@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 # Include any dependencies generated for this target.
 include _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/depend.make
@@ -70,46 +70,46 @@ include _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/progress.
 include _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/flags.make
 
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/cable.cc.o: _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/flags.make
-_deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/cable.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/plugin/elasticity/cable.cc
+_deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/cable.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/plugin/elasticity/cable.cc
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/cable.cc.o: _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/cable.cc.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/cable.cc.o -MF CMakeFiles/elasticity.dir/cable.cc.o.d -o CMakeFiles/elasticity.dir/cable.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/plugin/elasticity/cable.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/cable.cc.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/cable.cc.o -MF CMakeFiles/elasticity.dir/cable.cc.o.d -o CMakeFiles/elasticity.dir/cable.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/plugin/elasticity/cable.cc
 
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/cable.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/elasticity.dir/cable.cc.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/plugin/elasticity/cable.cc > CMakeFiles/elasticity.dir/cable.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/plugin/elasticity/cable.cc > CMakeFiles/elasticity.dir/cable.cc.i
 
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/cable.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/elasticity.dir/cable.cc.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/plugin/elasticity/cable.cc -o CMakeFiles/elasticity.dir/cable.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/plugin/elasticity/cable.cc -o CMakeFiles/elasticity.dir/cable.cc.s
 
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/elasticity.cc.o: _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/flags.make
-_deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/elasticity.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/plugin/elasticity/elasticity.cc
+_deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/elasticity.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/plugin/elasticity/elasticity.cc
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/elasticity.cc.o: _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/elasticity.cc.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/elasticity.cc.o -MF CMakeFiles/elasticity.dir/elasticity.cc.o.d -o CMakeFiles/elasticity.dir/elasticity.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/plugin/elasticity/elasticity.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/elasticity.cc.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/elasticity.cc.o -MF CMakeFiles/elasticity.dir/elasticity.cc.o.d -o CMakeFiles/elasticity.dir/elasticity.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/plugin/elasticity/elasticity.cc
 
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/elasticity.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/elasticity.dir/elasticity.cc.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/plugin/elasticity/elasticity.cc > CMakeFiles/elasticity.dir/elasticity.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/plugin/elasticity/elasticity.cc > CMakeFiles/elasticity.dir/elasticity.cc.i
 
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/elasticity.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/elasticity.dir/elasticity.cc.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/plugin/elasticity/elasticity.cc -o CMakeFiles/elasticity.dir/elasticity.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/plugin/elasticity/elasticity.cc -o CMakeFiles/elasticity.dir/elasticity.cc.s
 
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/solid.cc.o: _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/flags.make
-_deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/solid.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/plugin/elasticity/solid.cc
+_deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/solid.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/plugin/elasticity/solid.cc
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/solid.cc.o: _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/solid.cc.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/solid.cc.o -MF CMakeFiles/elasticity.dir/solid.cc.o.d -o CMakeFiles/elasticity.dir/solid.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/plugin/elasticity/solid.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/solid.cc.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/solid.cc.o -MF CMakeFiles/elasticity.dir/solid.cc.o.d -o CMakeFiles/elasticity.dir/solid.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/plugin/elasticity/solid.cc
 
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/solid.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/elasticity.dir/solid.cc.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/plugin/elasticity/solid.cc > CMakeFiles/elasticity.dir/solid.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/plugin/elasticity/solid.cc > CMakeFiles/elasticity.dir/solid.cc.i
 
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/solid.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/elasticity.dir/solid.cc.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/plugin/elasticity/solid.cc -o CMakeFiles/elasticity.dir/solid.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/plugin/elasticity && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/plugin/elasticity/solid.cc -o CMakeFiles/elasticity.dir/solid.cc.s
 
 # Object files for target elasticity
 elasticity_OBJECTS = \
@@ -126,18 +126,18 @@ lib/libelasticity.so: _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity
 lib/libelasticity.so: _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/build.make
 lib/libelasticity.so: lib/libmujoco.so.2.3.2
 lib/libelasticity.so: _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../../../../lib/libelasticity.so"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/plugin/elasticity && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/elasticity.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX shared library ../../../../lib/libelasticity.so"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/plugin/elasticity && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/elasticity.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/build: lib/libelasticity.so
 .PHONY : _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/build
 
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/plugin/elasticity && $(CMAKE_COMMAND) -P CMakeFiles/elasticity.dir/cmake_clean.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/plugin/elasticity && $(CMAKE_COMMAND) -P CMakeFiles/elasticity.dir/cmake_clean.cmake
 .PHONY : _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/clean
 
 _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/plugin/elasticity /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/plugin/elasticity /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/plugin/elasticity /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/plugin/elasticity /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/mujoco-build/plugin/elasticity/CMakeFiles/elasticity.dir/depend
 

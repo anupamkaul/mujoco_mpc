@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 # Include any dependencies generated for this target.
 include _deps/ccd-build/src/CMakeFiles/ccd.dir/depend.make
@@ -70,74 +70,74 @@ include _deps/ccd-build/src/CMakeFiles/ccd.dir/progress.make
 include _deps/ccd-build/src/CMakeFiles/ccd.dir/flags.make
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/ccd.c.o: _deps/ccd-build/src/CMakeFiles/ccd.dir/flags.make
-_deps/ccd-build/src/CMakeFiles/ccd.dir/ccd.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/ccd.c
+_deps/ccd-build/src/CMakeFiles/ccd.dir/ccd.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/ccd.c
 _deps/ccd-build/src/CMakeFiles/ccd.dir/ccd.c.o: _deps/ccd-build/src/CMakeFiles/ccd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/ccd-build/src/CMakeFiles/ccd.dir/ccd.c.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/ccd-build/src/CMakeFiles/ccd.dir/ccd.c.o -MF CMakeFiles/ccd.dir/ccd.c.o.d -o CMakeFiles/ccd.dir/ccd.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/ccd.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/ccd-build/src/CMakeFiles/ccd.dir/ccd.c.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/ccd-build/src/CMakeFiles/ccd.dir/ccd.c.o -MF CMakeFiles/ccd.dir/ccd.c.o.d -o CMakeFiles/ccd.dir/ccd.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/ccd.c
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/ccd.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ccd.dir/ccd.c.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/ccd.c > CMakeFiles/ccd.dir/ccd.c.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/ccd.c > CMakeFiles/ccd.dir/ccd.c.i
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/ccd.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ccd.dir/ccd.c.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/ccd.c -o CMakeFiles/ccd.dir/ccd.c.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/ccd.c -o CMakeFiles/ccd.dir/ccd.c.s
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/mpr.c.o: _deps/ccd-build/src/CMakeFiles/ccd.dir/flags.make
-_deps/ccd-build/src/CMakeFiles/ccd.dir/mpr.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/mpr.c
+_deps/ccd-build/src/CMakeFiles/ccd.dir/mpr.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/mpr.c
 _deps/ccd-build/src/CMakeFiles/ccd.dir/mpr.c.o: _deps/ccd-build/src/CMakeFiles/ccd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object _deps/ccd-build/src/CMakeFiles/ccd.dir/mpr.c.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/ccd-build/src/CMakeFiles/ccd.dir/mpr.c.o -MF CMakeFiles/ccd.dir/mpr.c.o.d -o CMakeFiles/ccd.dir/mpr.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/mpr.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object _deps/ccd-build/src/CMakeFiles/ccd.dir/mpr.c.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/ccd-build/src/CMakeFiles/ccd.dir/mpr.c.o -MF CMakeFiles/ccd.dir/mpr.c.o.d -o CMakeFiles/ccd.dir/mpr.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/mpr.c
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/mpr.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ccd.dir/mpr.c.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/mpr.c > CMakeFiles/ccd.dir/mpr.c.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/mpr.c > CMakeFiles/ccd.dir/mpr.c.i
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/mpr.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ccd.dir/mpr.c.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/mpr.c -o CMakeFiles/ccd.dir/mpr.c.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/mpr.c -o CMakeFiles/ccd.dir/mpr.c.s
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/polytope.c.o: _deps/ccd-build/src/CMakeFiles/ccd.dir/flags.make
-_deps/ccd-build/src/CMakeFiles/ccd.dir/polytope.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/polytope.c
+_deps/ccd-build/src/CMakeFiles/ccd.dir/polytope.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/polytope.c
 _deps/ccd-build/src/CMakeFiles/ccd.dir/polytope.c.o: _deps/ccd-build/src/CMakeFiles/ccd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object _deps/ccd-build/src/CMakeFiles/ccd.dir/polytope.c.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/ccd-build/src/CMakeFiles/ccd.dir/polytope.c.o -MF CMakeFiles/ccd.dir/polytope.c.o.d -o CMakeFiles/ccd.dir/polytope.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/polytope.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object _deps/ccd-build/src/CMakeFiles/ccd.dir/polytope.c.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/ccd-build/src/CMakeFiles/ccd.dir/polytope.c.o -MF CMakeFiles/ccd.dir/polytope.c.o.d -o CMakeFiles/ccd.dir/polytope.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/polytope.c
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/polytope.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ccd.dir/polytope.c.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/polytope.c > CMakeFiles/ccd.dir/polytope.c.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/polytope.c > CMakeFiles/ccd.dir/polytope.c.i
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/polytope.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ccd.dir/polytope.c.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/polytope.c -o CMakeFiles/ccd.dir/polytope.c.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/polytope.c -o CMakeFiles/ccd.dir/polytope.c.s
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/support.c.o: _deps/ccd-build/src/CMakeFiles/ccd.dir/flags.make
-_deps/ccd-build/src/CMakeFiles/ccd.dir/support.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/support.c
+_deps/ccd-build/src/CMakeFiles/ccd.dir/support.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/support.c
 _deps/ccd-build/src/CMakeFiles/ccd.dir/support.c.o: _deps/ccd-build/src/CMakeFiles/ccd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object _deps/ccd-build/src/CMakeFiles/ccd.dir/support.c.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/ccd-build/src/CMakeFiles/ccd.dir/support.c.o -MF CMakeFiles/ccd.dir/support.c.o.d -o CMakeFiles/ccd.dir/support.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/support.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object _deps/ccd-build/src/CMakeFiles/ccd.dir/support.c.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/ccd-build/src/CMakeFiles/ccd.dir/support.c.o -MF CMakeFiles/ccd.dir/support.c.o.d -o CMakeFiles/ccd.dir/support.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/support.c
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/support.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ccd.dir/support.c.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/support.c > CMakeFiles/ccd.dir/support.c.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/support.c > CMakeFiles/ccd.dir/support.c.i
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/support.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ccd.dir/support.c.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/support.c -o CMakeFiles/ccd.dir/support.c.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/support.c -o CMakeFiles/ccd.dir/support.c.s
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/vec3.c.o: _deps/ccd-build/src/CMakeFiles/ccd.dir/flags.make
-_deps/ccd-build/src/CMakeFiles/ccd.dir/vec3.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/vec3.c
+_deps/ccd-build/src/CMakeFiles/ccd.dir/vec3.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/vec3.c
 _deps/ccd-build/src/CMakeFiles/ccd.dir/vec3.c.o: _deps/ccd-build/src/CMakeFiles/ccd.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object _deps/ccd-build/src/CMakeFiles/ccd.dir/vec3.c.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/ccd-build/src/CMakeFiles/ccd.dir/vec3.c.o -MF CMakeFiles/ccd.dir/vec3.c.o.d -o CMakeFiles/ccd.dir/vec3.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/vec3.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object _deps/ccd-build/src/CMakeFiles/ccd.dir/vec3.c.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/ccd-build/src/CMakeFiles/ccd.dir/vec3.c.o -MF CMakeFiles/ccd.dir/vec3.c.o.d -o CMakeFiles/ccd.dir/vec3.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/vec3.c
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/vec3.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ccd.dir/vec3.c.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/vec3.c > CMakeFiles/ccd.dir/vec3.c.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/vec3.c > CMakeFiles/ccd.dir/vec3.c.i
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/vec3.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ccd.dir/vec3.c.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src/vec3.c -o CMakeFiles/ccd.dir/vec3.c.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src/vec3.c -o CMakeFiles/ccd.dir/vec3.c.s
 
 # Object files for target ccd
 ccd_OBJECTS = \
@@ -157,19 +157,19 @@ lib/libccd.a: _deps/ccd-build/src/CMakeFiles/ccd.dir/support.c.o
 lib/libccd.a: _deps/ccd-build/src/CMakeFiles/ccd.dir/vec3.c.o
 lib/libccd.a: _deps/ccd-build/src/CMakeFiles/ccd.dir/build.make
 lib/libccd.a: _deps/ccd-build/src/CMakeFiles/ccd.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library ../../../lib/libccd.a"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && $(CMAKE_COMMAND) -P CMakeFiles/ccd.dir/cmake_clean_target.cmake
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ccd.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Linking C static library ../../../lib/libccd.a"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && $(CMAKE_COMMAND) -P CMakeFiles/ccd.dir/cmake_clean_target.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ccd.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/ccd-build/src/CMakeFiles/ccd.dir/build: lib/libccd.a
 .PHONY : _deps/ccd-build/src/CMakeFiles/ccd.dir/build
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src && $(CMAKE_COMMAND) -P CMakeFiles/ccd.dir/cmake_clean.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src && $(CMAKE_COMMAND) -P CMakeFiles/ccd.dir/cmake_clean.cmake
 .PHONY : _deps/ccd-build/src/CMakeFiles/ccd.dir/clean
 
 _deps/ccd-build/src/CMakeFiles/ccd.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src/CMakeFiles/ccd.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src/CMakeFiles/ccd.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/ccd-build/src/CMakeFiles/ccd.dir/depend
 

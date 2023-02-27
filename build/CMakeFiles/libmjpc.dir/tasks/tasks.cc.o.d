@@ -1,8 +1,8 @@
 CMakeFiles/libmjpc.dir/tasks/tasks.cc.o: \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/tasks/tasks.cc \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/tasks/tasks.cc \
  /usr/include/stdc-predef.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/tasks/tasks.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/task.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/tasks/tasks.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/task.h \
  /usr/include/c++/9/string \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -104,11 +104,11 @@ CMakeFiles/libmjpc.dir/tasks/tasks.cc.o: \
  /usr/include/c++/9/bits/stl_relops.h \
  /usr/include/c++/9/bits/stl_vector.h \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjvisualize.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjtnum.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjmodel.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mujoco.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjexport.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjvisualize.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjtnum.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjmodel.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mujoco.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjexport.h \
  /usr/include/c++/9/stdlib.h /usr/include/c++/9/math.h \
  /usr/include/c++/9/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -133,11 +133,11 @@ CMakeFiles/libmjpc.dir/tasks/tasks.cc.o: \
  /usr/include/c++/9/tr1/poly_hermite.tcc \
  /usr/include/c++/9/tr1/poly_laguerre.tcc \
  /usr/include/c++/9/tr1/riemann_zeta.tcc \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjdata.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjplugin.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjrender.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjui.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/norm.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjdata.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjplugin.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjrender.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjui.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/norm.h \
  /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_raw_storage_iter.h \
  /usr/include/c++/9/ext/concurrence.h \
  /usr/include/c++/9/bits/uses_allocator.h \
@@ -173,15 +173,15 @@ CMakeFiles/libmjpc.dir/tasks/tasks.cc.o: \
  /usr/include/c++/9/bits/ostream.tcc /usr/include/c++/9/istream \
  /usr/include/c++/9/bits/istream.tcc /usr/include/c++/9/sstream \
  /usr/include/c++/9/bits/sstream.tcc \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/tasks/acrobot/acrobot.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/tasks/cartpole/cartpole.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/tasks/hand/hand.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/tasks/humanoid/stand/stand.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/tasks/humanoid/tracking/tracking.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/tasks/humanoid/walk/walk.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/tasks/panda/panda.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/tasks/particle/particle.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/tasks/quadrotor/quadrotor.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/tasks/quadruped/quadruped.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/tasks/swimmer/swimmer.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/tasks/walker/walker.h
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/tasks/acrobot/acrobot.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/tasks/cartpole/cartpole.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/tasks/hand/hand.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/tasks/humanoid/stand/stand.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/tasks/humanoid/tracking/tracking.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/tasks/humanoid/walk/walk.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/tasks/panda/panda.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/tasks/particle/particle.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/tasks/quadrotor/quadrotor.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/tasks/quadruped/quadruped.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/tasks/swimmer/swimmer.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/tasks/walker/walker.h

@@ -1,4 +1,4 @@
-# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src
+# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,22 +44,22 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/ccd" TYPE FILE FILES
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/ccd-config.cmake"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/ccd-config-version.cmake"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/ccd-config.cmake"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/ccd-config-version.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/ccd.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/anupam/github_robotics/simulator/mujoco_mpc/build/ccd.pc")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/ccd" TYPE FILE FILES "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/BSD-LICENSE")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/doc/ccd" TYPE FILE FILES "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/BSD-LICENSE")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src/cmake_install.cmake")
 
 endif()
 

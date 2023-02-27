@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 # Include any dependencies generated for this target.
 include _deps/qhull-build/CMakeFiles/qdelaunay.dir/depend.make
@@ -70,18 +70,18 @@ include _deps/qhull-build/CMakeFiles/qdelaunay.dir/progress.make
 include _deps/qhull-build/CMakeFiles/qdelaunay.dir/flags.make
 
 _deps/qhull-build/CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.o: _deps/qhull-build/CMakeFiles/qdelaunay.dir/flags.make
-_deps/qhull-build/CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/qdelaunay/qdelaun.c
+_deps/qhull-build/CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.o: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/qdelaunay/qdelaun.c
 _deps/qhull-build/CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.o: _deps/qhull-build/CMakeFiles/qdelaunay.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/qhull-build/CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/qhull-build/CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.o -MF CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.o.d -o CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/qdelaunay/qdelaun.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object _deps/qhull-build/CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT _deps/qhull-build/CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.o -MF CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.o.d -o CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/qdelaunay/qdelaun.c
 
 _deps/qhull-build/CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/qdelaunay/qdelaun.c > CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/qdelaunay/qdelaun.c > CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.i
 
 _deps/qhull-build/CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src/src/qdelaunay/qdelaun.c -o CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && /usr/lib/ccache/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src/src/qdelaunay/qdelaun.c -o CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.c.s
 
 # Object files for target qdelaunay
 qdelaunay_OBJECTS = \
@@ -94,18 +94,18 @@ bin/qdelaunay: _deps/qhull-build/CMakeFiles/qdelaunay.dir/src/qdelaunay/qdelaun.
 bin/qdelaunay: _deps/qhull-build/CMakeFiles/qdelaunay.dir/build.make
 bin/qdelaunay: lib/libqhullstatic.a
 bin/qdelaunay: _deps/qhull-build/CMakeFiles/qdelaunay.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/qdelaunay"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qdelaunay.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable ../../bin/qdelaunay"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/qdelaunay.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 _deps/qhull-build/CMakeFiles/qdelaunay.dir/build: bin/qdelaunay
 .PHONY : _deps/qhull-build/CMakeFiles/qdelaunay.dir/build
 
 _deps/qhull-build/CMakeFiles/qdelaunay.dir/clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build && $(CMAKE_COMMAND) -P CMakeFiles/qdelaunay.dir/cmake_clean.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build && $(CMAKE_COMMAND) -P CMakeFiles/qdelaunay.dir/cmake_clean.cmake
 .PHONY : _deps/qhull-build/CMakeFiles/qdelaunay.dir/clean
 
 _deps/qhull-build/CMakeFiles/qdelaunay.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-src /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/qhull-build/CMakeFiles/qdelaunay.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-src /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/qhull-build/CMakeFiles/qdelaunay.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : _deps/qhull-build/CMakeFiles/qdelaunay.dir/depend
 

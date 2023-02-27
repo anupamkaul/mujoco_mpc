@@ -22,8 +22,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(tinyobjloader-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/tinyobjloader/tinyobjloader.git" "GIT_TAG" "1421a10d6ed9742f5b2c1766d22faa6cfbc56248" "GIT_SHALLOW" "FALSE" "PATCH_COMMAND"
-                    SOURCE_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/tinyobjloader-src"
-                    BINARY_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/tinyobjloader-build"
+                    SOURCE_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/tinyobjloader-src"
+                    BINARY_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/tinyobjloader-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

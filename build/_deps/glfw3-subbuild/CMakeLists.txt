@@ -22,8 +22,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(glfw3-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/glfw/glfw.git" "GIT_TAG" "7482de6071d21db77a7236155da44c172a7f6c9e" "GIT_SHALLOW" "FALSE" "PATCH_COMMAND"
-                    SOURCE_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/glfw3-src"
-                    BINARY_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/glfw3-build"
+                    SOURCE_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/glfw3-src"
+                    BINARY_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/glfw3-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

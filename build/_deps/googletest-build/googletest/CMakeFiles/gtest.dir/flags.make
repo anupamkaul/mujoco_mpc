@@ -4,7 +4,7 @@
 # compile CXX with /usr/lib/ccache/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest/include -I/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/googletest-src/googletest
+CXX_INCLUDES = -I/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest/include -I/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/googletest-src/googletest
 
 CXX_FLAGS = -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility-inlines-hidden -Wall -Wshadow -Wno-error=dangling-else -DGTEST_HAS_PTHREAD=1 -fexceptions -Wextra -Wno-unused-parameter -Wno-missing-field-initializers -fdata-sections -ffunction-sections -std=c++2a
 

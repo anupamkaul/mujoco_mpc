@@ -1,8 +1,8 @@
 _deps/mujoco-build/simulate/CMakeFiles/platform_ui_adapter.dir/glfw_dispatch.cc.o: \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate/glfw_dispatch.cc \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate/glfw_dispatch.cc \
  /usr/include/stdc-predef.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/simulate/glfw_dispatch.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/glfw3-src/include/GLFW/glfw3.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/simulate/glfw_dispatch.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/glfw3-src/include/GLFW/glfw3.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stddef.h \
  /usr/lib/gcc/x86_64-linux-gnu/9/include/stdint.h /usr/include/stdint.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \

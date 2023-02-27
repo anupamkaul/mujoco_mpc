@@ -22,8 +22,8 @@ set_property(GLOBAL PROPERTY _CMAKE_FindGit_GIT_EXECUTABLE_VERSION
 include(ExternalProject)
 ExternalProject_Add(ccd-populate
                      "UPDATE_DISCONNECTED" "False" "GIT_REPOSITORY" "https://github.com/danfis/libccd.git" "GIT_TAG" "7931e764a19ef6b21b443376c699bbc9c6d4fba8" "GIT_SHALLOW" "FALSE" "PATCH_COMMAND"
-                    SOURCE_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src"
-                    BINARY_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build"
+                    SOURCE_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src"
+                    BINARY_DIR          "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build"
                     CONFIGURE_COMMAND   ""
                     BUILD_COMMAND       ""
                     INSTALL_COMMAND     ""

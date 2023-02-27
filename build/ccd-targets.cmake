@@ -50,7 +50,7 @@ unset(_cmake_expected_targets)
 add_library(ccd STATIC IMPORTED)
 
 set_target_properties(ccd PROPERTIES
-  INTERFACE_INCLUDE_DIRECTORIES "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src;/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src"
+  INTERFACE_INCLUDE_DIRECTORIES "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src;/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src"
 )
 
 # Import target "ccd" for configuration "Release"
@@ -58,7 +58,7 @@ set_property(TARGET ccd APPEND PROPERTY IMPORTED_CONFIGURATIONS RELEASE)
 set_target_properties(ccd PROPERTIES
   IMPORTED_LINK_INTERFACE_LANGUAGES_RELEASE "C"
   IMPORTED_LINK_INTERFACE_LIBRARIES_RELEASE "/usr/lib/x86_64-linux-gnu/libm.so"
-  IMPORTED_LOCATION_RELEASE "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/lib/libccd.a"
+  IMPORTED_LOCATION_RELEASE "/home/anupam/github_robotics/simulator/mujoco_mpc/build/lib/libccd.a"
   )
 
 # This file does not depend on other imported targets which have

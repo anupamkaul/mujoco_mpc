@@ -1,4 +1,4 @@
-# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/tasks
+# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/tasks
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

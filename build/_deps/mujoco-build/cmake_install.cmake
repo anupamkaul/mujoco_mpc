@@ -1,4 +1,4 @@
-# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src
+# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -44,42 +44,42 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/plugin/elasticity/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/plugin/elasticity/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/src/engine/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/src/engine/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/src/user/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/src/user/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/src/xml/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/src/xml/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/src/render/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/src/render/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/src/ui/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/src/ui/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/model/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/model/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/simulate/cmake_install.cmake")
+  include("/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/simulate/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "runtime" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -89,7 +89,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "runtime" OR NOT CMAKE_INSTALL_COMPONENT)
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmujoco.so.2.3.2"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/lib/libmujoco.so.2.3.2")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/anupam/github_robotics/simulator/mujoco_mpc/build/lib/libmujoco.so.2.3.2")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmujoco.so.2.3.2" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmujoco.so.2.3.2")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -105,7 +105,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "runtime" OR NOT CMAKE_INSTALL_COMPONENT)
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmujoco.so"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/lib/libmujoco.so")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE SHARED_LIBRARY FILES "/home/anupam/github_robotics/simulator/mujoco_mpc/build/lib/libmujoco.so")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmujoco.so" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/libmujoco.so")
     if(CMAKE_INSTALL_DO_STRIP)
@@ -116,16 +116,16 @@ endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "dev" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/include/mujoco" TYPE FILE FILES
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjdata.h"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjexport.h"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjmodel.h"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjplugin.h"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjrender.h"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjtnum.h"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjui.h"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjvisualize.h"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjxmacro.h"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mujoco.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjdata.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjexport.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjmodel.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjplugin.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjrender.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjtnum.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjui.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjvisualize.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjxmacro.h"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mujoco.h"
     )
 endif()
 
@@ -133,7 +133,7 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/mujoco/mujocoTargets.cmake")
     file(DIFFERENT _cmake_export_file_changed FILES
          "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/mujoco/mujocoTargets.cmake"
-         "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/CMakeFiles/Export/0b3b73e44e0b7c8937151edebfc316a5/mujocoTargets.cmake")
+         "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/CMakeFiles/Export/0b3b73e44e0b7c8937151edebfc316a5/mujocoTargets.cmake")
     if(_cmake_export_file_changed)
       file(GLOB _cmake_old_config_files "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/cmake/mujoco/mujocoTargets-*.cmake")
       if(_cmake_old_config_files)
@@ -146,20 +146,20 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
     endif()
     unset(_cmake_export_file_changed)
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/mujoco" TYPE FILE FILES "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/CMakeFiles/Export/0b3b73e44e0b7c8937151edebfc316a5/mujocoTargets.cmake")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/mujoco" TYPE FILE FILES "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/CMakeFiles/Export/0b3b73e44e0b7c8937151edebfc316a5/mujocoTargets.cmake")
   if(CMAKE_INSTALL_CONFIG_NAME MATCHES "^([Rr][Ee][Ll][Ee][Aa][Ss][Ee])$")
-    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/mujoco" TYPE FILE FILES "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/CMakeFiles/Export/0b3b73e44e0b7c8937151edebfc316a5/mujocoTargets-release.cmake")
+    file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/mujoco" TYPE FILE FILES "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/CMakeFiles/Export/0b3b73e44e0b7c8937151edebfc316a5/mujocoTargets-release.cmake")
   endif()
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/cmake/mujoco" TYPE FILE FILES
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/mujocoConfig.cmake"
-    "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-build/mujocoConfigVersion.cmake"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/mujocoConfig.cmake"
+    "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-build/mujocoConfigVersion.cmake"
     )
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mujoco" TYPE DIRECTORY FILES "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/model" REGEX "/CMakeLists\\.txt$" EXCLUDE)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/mujoco" TYPE DIRECTORY FILES "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/model" REGEX "/CMakeLists\\.txt$" EXCLUDE)
 endif()
 

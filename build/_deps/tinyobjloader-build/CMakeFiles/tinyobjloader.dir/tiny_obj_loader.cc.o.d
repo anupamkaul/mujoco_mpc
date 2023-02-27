@@ -1,7 +1,7 @@
 _deps/tinyobjloader-build/CMakeFiles/tinyobjloader.dir/tiny_obj_loader.cc.o: \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/tinyobjloader-src/tiny_obj_loader.cc \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/tinyobjloader-src/tiny_obj_loader.cc \
  /usr/include/stdc-predef.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/tinyobjloader-src/tiny_obj_loader.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/tinyobjloader-src/tiny_obj_loader.h \
  /usr/include/c++/9/map /usr/include/c++/9/bits/stl_tree.h \
  /usr/include/c++/9/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \

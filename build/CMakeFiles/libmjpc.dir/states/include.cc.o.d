@@ -1,7 +1,7 @@
 CMakeFiles/libmjpc.dir/states/include.cc.o: \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/states/include.cc \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/states/include.cc \
  /usr/include/stdc-predef.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/states/include.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/states/include.h \
  /usr/include/c++/9/memory /usr/include/c++/9/bits/stl_algobase.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/9/bits/os_defines.h \
@@ -118,15 +118,15 @@ CMakeFiles/libmjpc.dir/states/include.cc.o: \
  /usr/include/c++/9/pstl/execution_defs.h /usr/include/c++/9/vector \
  /usr/include/c++/9/bits/stl_vector.h \
  /usr/include/c++/9/bits/stl_bvector.h /usr/include/c++/9/bits/vector.tcc \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/../mjpc/states/state.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/../mjpc/states/state.h \
  /usr/include/c++/9/shared_mutex /usr/include/c++/9/condition_variable \
  /usr/include/c++/9/chrono /usr/include/c++/9/ratio \
  /usr/include/c++/9/ctime /usr/include/c++/9/bits/parse_numbers.h \
  /usr/include/c++/9/bits/std_mutex.h /usr/include/c++/9/system_error \
  /usr/include/x86_64-linux-gnu/c++/9/bits/error_constants.h \
  /usr/include/c++/9/bits/unique_lock.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mujoco.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjexport.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mujoco.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjexport.h \
  /usr/include/c++/9/stdlib.h /usr/include/c++/9/math.h \
  /usr/include/c++/9/cmath /usr/include/math.h \
  /usr/include/x86_64-linux-gnu/bits/math-vector.h \
@@ -151,10 +151,10 @@ CMakeFiles/libmjpc.dir/states/include.cc.o: \
  /usr/include/c++/9/tr1/poly_hermite.tcc \
  /usr/include/c++/9/tr1/poly_laguerre.tcc \
  /usr/include/c++/9/tr1/riemann_zeta.tcc \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjdata.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjtnum.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjmodel.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjplugin.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjvisualize.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjrender.h \
- /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/mujoco-src/include/mujoco/mjui.h
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjdata.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjtnum.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjmodel.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjplugin.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjvisualize.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjrender.h \
+ /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/mujoco-src/include/mujoco/mjui.h

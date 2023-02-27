@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild
 
 # Utility rule file for lodepng-populate.
 
@@ -77,57 +77,57 @@ CMakeFiles/lodepng-populate-complete: lodepng-populate-prefix/src/lodepng-popula
 CMakeFiles/lodepng-populate-complete: lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-build
 CMakeFiles/lodepng-populate-complete: lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-install
 CMakeFiles/lodepng-populate-complete: lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-test
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'lodepng-populate'"
-	/usr/local/bin/cmake -E make_directory /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/CMakeFiles
-	/usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/CMakeFiles/lodepng-populate-complete
-	/usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-done
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Completed 'lodepng-populate'"
+	/usr/local/bin/cmake -E make_directory /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/CMakeFiles
+	/usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/CMakeFiles/lodepng-populate-complete
+	/usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-done
 
 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-update:
 .PHONY : lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-update
 
 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-build: lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-configure
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'lodepng-populate'"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-build && /usr/local/bin/cmake -E echo_append
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-build && /usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "No build step for 'lodepng-populate'"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-build && /usr/local/bin/cmake -E echo_append
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-build && /usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-build
 
 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-configure: lodepng-populate-prefix/tmp/lodepng-populate-cfgcmd.txt
 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-configure: lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-patch
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'lodepng-populate'"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-build && /usr/local/bin/cmake -E echo_append
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-build && /usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-configure
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "No configure step for 'lodepng-populate'"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-build && /usr/local/bin/cmake -E echo_append
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-build && /usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-configure
 
 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-download: lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-gitinfo.txt
 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-download: lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-mkdir
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'lodepng-populate'"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps && /usr/local/bin/cmake -P /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/lodepng-populate-prefix/tmp/lodepng-populate-gitclone.cmake
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps && /usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-download
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Performing download step (git clone) for 'lodepng-populate'"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps && /usr/local/bin/cmake -P /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/lodepng-populate-prefix/tmp/lodepng-populate-gitclone.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps && /usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-download
 
 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-install: lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'lodepng-populate'"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-build && /usr/local/bin/cmake -E echo_append
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-build && /usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-install
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "No install step for 'lodepng-populate'"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-build && /usr/local/bin/cmake -E echo_append
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-build && /usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-install
 
 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-mkdir:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'lodepng-populate'"
-	/usr/local/bin/cmake -Dcfgdir= -P /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/lodepng-populate-prefix/tmp/lodepng-populate-mkdirs.cmake
-	/usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-mkdir
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Creating directories for 'lodepng-populate'"
+	/usr/local/bin/cmake -Dcfgdir= -P /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/lodepng-populate-prefix/tmp/lodepng-populate-mkdirs.cmake
+	/usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-mkdir
 
 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-patch: lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-update
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'lodepng-populate'"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "No patch step for 'lodepng-populate'"
 	/usr/local/bin/cmake -E echo_append
-	/usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-patch
+	/usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-patch
 
 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-update:
 .PHONY : lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-update
 
 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-test: lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-install
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'lodepng-populate'"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-build && /usr/local/bin/cmake -E echo_append
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-build && /usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-test
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "No test step for 'lodepng-populate'"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-build && /usr/local/bin/cmake -E echo_append
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-build && /usr/local/bin/cmake -E touch /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-test
 
 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-update: lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-download
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Performing update step for 'lodepng-populate'"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-src && /usr/local/bin/cmake -P /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/lodepng-populate-prefix/tmp/lodepng-populate-gitupdate.cmake
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Performing update step for 'lodepng-populate'"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-src && /usr/local/bin/cmake -P /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/lodepng-populate-prefix/tmp/lodepng-populate-gitupdate.cmake
 
 lodepng-populate: CMakeFiles/lodepng-populate
 lodepng-populate: CMakeFiles/lodepng-populate-complete
@@ -151,6 +151,6 @@ CMakeFiles/lodepng-populate.dir/clean:
 .PHONY : CMakeFiles/lodepng-populate.dir/clean
 
 CMakeFiles/lodepng-populate.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/lodepng-subbuild/CMakeFiles/lodepng-populate.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/lodepng-subbuild/CMakeFiles/lodepng-populate.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/lodepng-populate.dir/depend
 

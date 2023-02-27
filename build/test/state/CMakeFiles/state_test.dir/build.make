@@ -53,10 +53,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 # Include any dependencies generated for this target.
 include test/state/CMakeFiles/state_test.dir/depend.make
@@ -70,18 +70,18 @@ include test/state/CMakeFiles/state_test.dir/progress.make
 include test/state/CMakeFiles/state_test.dir/flags.make
 
 test/state/CMakeFiles/state_test.dir/state_test.cc.o: test/state/CMakeFiles/state_test.dir/flags.make
-test/state/CMakeFiles/state_test.dir/state_test.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/state/state_test.cc
+test/state/CMakeFiles/state_test.dir/state_test.cc.o: /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/state/state_test.cc
 test/state/CMakeFiles/state_test.dir/state_test.cc.o: test/state/CMakeFiles/state_test.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/state/CMakeFiles/state_test.dir/state_test.cc.o"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/state && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/state/CMakeFiles/state_test.dir/state_test.cc.o -MF CMakeFiles/state_test.dir/state_test.cc.o.d -o CMakeFiles/state_test.dir/state_test.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/state/state_test.cc
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object test/state/CMakeFiles/state_test.dir/state_test.cc.o"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/state && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT test/state/CMakeFiles/state_test.dir/state_test.cc.o -MF CMakeFiles/state_test.dir/state_test.cc.o.d -o CMakeFiles/state_test.dir/state_test.cc.o -c /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/state/state_test.cc
 
 test/state/CMakeFiles/state_test.dir/state_test.cc.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/state_test.dir/state_test.cc.i"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/state && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/state/state_test.cc > CMakeFiles/state_test.dir/state_test.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/state && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/state/state_test.cc > CMakeFiles/state_test.dir/state_test.cc.i
 
 test/state/CMakeFiles/state_test.dir/state_test.cc.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/state_test.dir/state_test.cc.s"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/state && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/state/state_test.cc -o CMakeFiles/state_test.dir/state_test.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/state && /usr/lib/ccache/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/state/state_test.cc -o CMakeFiles/state_test.dir/state_test.cc.s
 
 # Object files for target state_test
 state_test_OBJECTS = \
@@ -145,18 +145,18 @@ bin/state_test: lib/libabsl_raw_logging_internal.a
 bin/state_test: lib/libabsl_log_severity.a
 bin/state_test: lib/libgtest.a
 bin/state_test: test/state/CMakeFiles/state_test.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/state_test"
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/state && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/state_test.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../../bin/state_test"
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/state && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/state_test.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 test/state/CMakeFiles/state_test.dir/build: bin/state_test
 .PHONY : test/state/CMakeFiles/state_test.dir/build
 
 test/state/CMakeFiles/state_test.dir/clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/state && $(CMAKE_COMMAND) -P CMakeFiles/state_test.dir/cmake_clean.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/state && $(CMAKE_COMMAND) -P CMakeFiles/state_test.dir/cmake_clean.cmake
 .PHONY : test/state/CMakeFiles/state_test.dir/clean
 
 test/state/CMakeFiles/state_test.dir/depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc/test/state /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/state /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/state/CMakeFiles/state_test.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc/test/state /home/anupam/github_robotics/simulator/mujoco_mpc/build /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/state /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/state/CMakeFiles/state_test.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : test/state/CMakeFiles/state_test.dir/depend
 

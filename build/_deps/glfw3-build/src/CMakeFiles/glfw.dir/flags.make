@@ -4,7 +4,7 @@
 # compile C with /usr/lib/ccache/cc
 C_DEFINES = -D_GLFW_USE_CONFIG_H
 
-C_INCLUDES = -I/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/glfw3-src/include -I/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/glfw3-src/src -I/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/glfw3-build/src
+C_INCLUDES = -I/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/glfw3-src/include -I/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/glfw3-src/src -I/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/glfw3-build/src
 
 C_FLAGS = -O3 -DNDEBUG -fPIC -fvisibility=hidden -fdata-sections -ffunction-sections -Wall -std=c99
 

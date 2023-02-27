@@ -4,7 +4,7 @@
 # compile C with /usr/lib/ccache/cc
 C_DEFINES = -DCCD_STATIC_DEFINE
 
-C_INCLUDES = -I/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-src/src -I/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/ccd-build/src
+C_INCLUDES = -I/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-src/src -I/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/ccd-build/src
 
 C_FLAGS = -O3 -DNDEBUG -fPIC -fvisibility=hidden -fvisibility=hidden -fdata-sections -ffunction-sections -std=c11
 

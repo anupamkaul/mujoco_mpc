@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/tinyxml2-build//CMakeFiles/progress.marks
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles 0
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/tinyxml2-build//CMakeFiles/progress.marks
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/clean
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,23 +158,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/preinstall
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/preinstall
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles/VerifyGlobs.cmake
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/Experimental.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/Experimental.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/Experimental.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/Experimental.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ Experimental: _deps/tinyxml2-build/CMakeFiles/Experimental.dir/rule
 
 # fast build rule for target.
 Experimental/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/Experimental.dir/build.make _deps/tinyxml2-build/CMakeFiles/Experimental.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/Experimental.dir/build.make _deps/tinyxml2-build/CMakeFiles/Experimental.dir/build
 .PHONY : Experimental/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/Nightly.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/Nightly.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/Nightly.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/Nightly.dir/rule
 
 # Convenience name for target.
@@ -197,12 +197,12 @@ Nightly: _deps/tinyxml2-build/CMakeFiles/Nightly.dir/rule
 
 # fast build rule for target.
 Nightly/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/Nightly.dir/build.make _deps/tinyxml2-build/CMakeFiles/Nightly.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/Nightly.dir/build.make _deps/tinyxml2-build/CMakeFiles/Nightly.dir/build
 .PHONY : Nightly/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/Continuous.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/Continuous.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/Continuous.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/Continuous.dir/rule
 
 # Convenience name for target.
@@ -211,12 +211,12 @@ Continuous: _deps/tinyxml2-build/CMakeFiles/Continuous.dir/rule
 
 # fast build rule for target.
 Continuous/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/Continuous.dir/build.make _deps/tinyxml2-build/CMakeFiles/Continuous.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/Continuous.dir/build.make _deps/tinyxml2-build/CMakeFiles/Continuous.dir/build
 .PHONY : Continuous/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/NightlyMemoryCheck.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyMemoryCheck.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyMemoryCheck.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 # Convenience name for target.
@@ -225,12 +225,12 @@ NightlyMemoryCheck: _deps/tinyxml2-build/CMakeFiles/NightlyMemoryCheck.dir/rule
 
 # fast build rule for target.
 NightlyMemoryCheck/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyMemoryCheck.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyMemoryCheck.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyMemoryCheck.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyMemoryCheck.dir/build
 .PHONY : NightlyMemoryCheck/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/NightlyStart.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyStart.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyStart.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/NightlyStart.dir/rule
 
 # Convenience name for target.
@@ -239,12 +239,12 @@ NightlyStart: _deps/tinyxml2-build/CMakeFiles/NightlyStart.dir/rule
 
 # fast build rule for target.
 NightlyStart/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyStart.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyStart.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyStart.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyStart.dir/build
 .PHONY : NightlyStart/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/NightlyUpdate.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyUpdate.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyUpdate.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/NightlyUpdate.dir/rule
 
 # Convenience name for target.
@@ -253,12 +253,12 @@ NightlyUpdate: _deps/tinyxml2-build/CMakeFiles/NightlyUpdate.dir/rule
 
 # fast build rule for target.
 NightlyUpdate/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyUpdate.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyUpdate.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyUpdate.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyUpdate.dir/build
 .PHONY : NightlyUpdate/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/NightlyConfigure.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyConfigure.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyConfigure.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/NightlyConfigure.dir/rule
 
 # Convenience name for target.
@@ -267,12 +267,12 @@ NightlyConfigure: _deps/tinyxml2-build/CMakeFiles/NightlyConfigure.dir/rule
 
 # fast build rule for target.
 NightlyConfigure/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyConfigure.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyConfigure.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyConfigure.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyConfigure.dir/build
 .PHONY : NightlyConfigure/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/NightlyBuild.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyBuild.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyBuild.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/NightlyBuild.dir/rule
 
 # Convenience name for target.
@@ -281,12 +281,12 @@ NightlyBuild: _deps/tinyxml2-build/CMakeFiles/NightlyBuild.dir/rule
 
 # fast build rule for target.
 NightlyBuild/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyBuild.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyBuild.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyBuild.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyBuild.dir/build
 .PHONY : NightlyBuild/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/NightlyTest.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyTest.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyTest.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/NightlyTest.dir/rule
 
 # Convenience name for target.
@@ -295,12 +295,12 @@ NightlyTest: _deps/tinyxml2-build/CMakeFiles/NightlyTest.dir/rule
 
 # fast build rule for target.
 NightlyTest/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyTest.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyTest.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyTest.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyTest.dir/build
 .PHONY : NightlyTest/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/NightlyCoverage.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyCoverage.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyCoverage.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/NightlyCoverage.dir/rule
 
 # Convenience name for target.
@@ -309,12 +309,12 @@ NightlyCoverage: _deps/tinyxml2-build/CMakeFiles/NightlyCoverage.dir/rule
 
 # fast build rule for target.
 NightlyCoverage/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyCoverage.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyCoverage.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyCoverage.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyCoverage.dir/build
 .PHONY : NightlyCoverage/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/NightlyMemCheck.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyMemCheck.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlyMemCheck.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/NightlyMemCheck.dir/rule
 
 # Convenience name for target.
@@ -323,12 +323,12 @@ NightlyMemCheck: _deps/tinyxml2-build/CMakeFiles/NightlyMemCheck.dir/rule
 
 # fast build rule for target.
 NightlyMemCheck/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyMemCheck.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyMemCheck.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlyMemCheck.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlyMemCheck.dir/build
 .PHONY : NightlyMemCheck/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/NightlySubmit.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlySubmit.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/NightlySubmit.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/NightlySubmit.dir/rule
 
 # Convenience name for target.
@@ -337,12 +337,12 @@ NightlySubmit: _deps/tinyxml2-build/CMakeFiles/NightlySubmit.dir/rule
 
 # fast build rule for target.
 NightlySubmit/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlySubmit.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlySubmit.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/NightlySubmit.dir/build.make _deps/tinyxml2-build/CMakeFiles/NightlySubmit.dir/build
 .PHONY : NightlySubmit/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ExperimentalStart.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalStart.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalStart.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ExperimentalStart.dir/rule
 
 # Convenience name for target.
@@ -351,12 +351,12 @@ ExperimentalStart: _deps/tinyxml2-build/CMakeFiles/ExperimentalStart.dir/rule
 
 # fast build rule for target.
 ExperimentalStart/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalStart.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalStart.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalStart.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalStart.dir/build
 .PHONY : ExperimentalStart/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ExperimentalUpdate.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalUpdate.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalUpdate.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ExperimentalUpdate.dir/rule
 
 # Convenience name for target.
@@ -365,12 +365,12 @@ ExperimentalUpdate: _deps/tinyxml2-build/CMakeFiles/ExperimentalUpdate.dir/rule
 
 # fast build rule for target.
 ExperimentalUpdate/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalUpdate.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalUpdate.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalUpdate.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalUpdate.dir/build
 .PHONY : ExperimentalUpdate/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ExperimentalConfigure.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalConfigure.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalConfigure.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ExperimentalConfigure.dir/rule
 
 # Convenience name for target.
@@ -379,12 +379,12 @@ ExperimentalConfigure: _deps/tinyxml2-build/CMakeFiles/ExperimentalConfigure.dir
 
 # fast build rule for target.
 ExperimentalConfigure/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalConfigure.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalConfigure.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalConfigure.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalConfigure.dir/build
 .PHONY : ExperimentalConfigure/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ExperimentalBuild.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalBuild.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalBuild.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ExperimentalBuild.dir/rule
 
 # Convenience name for target.
@@ -393,12 +393,12 @@ ExperimentalBuild: _deps/tinyxml2-build/CMakeFiles/ExperimentalBuild.dir/rule
 
 # fast build rule for target.
 ExperimentalBuild/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalBuild.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalBuild.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalBuild.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalBuild.dir/build
 .PHONY : ExperimentalBuild/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ExperimentalTest.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalTest.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalTest.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ExperimentalTest.dir/rule
 
 # Convenience name for target.
@@ -407,12 +407,12 @@ ExperimentalTest: _deps/tinyxml2-build/CMakeFiles/ExperimentalTest.dir/rule
 
 # fast build rule for target.
 ExperimentalTest/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalTest.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalTest.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalTest.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalTest.dir/build
 .PHONY : ExperimentalTest/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ExperimentalCoverage.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalCoverage.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalCoverage.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ExperimentalCoverage.dir/rule
 
 # Convenience name for target.
@@ -421,12 +421,12 @@ ExperimentalCoverage: _deps/tinyxml2-build/CMakeFiles/ExperimentalCoverage.dir/r
 
 # fast build rule for target.
 ExperimentalCoverage/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalCoverage.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalCoverage.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalCoverage.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalCoverage.dir/build
 .PHONY : ExperimentalCoverage/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ExperimentalMemCheck.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalMemCheck.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalMemCheck.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ExperimentalMemCheck.dir/rule
 
 # Convenience name for target.
@@ -435,12 +435,12 @@ ExperimentalMemCheck: _deps/tinyxml2-build/CMakeFiles/ExperimentalMemCheck.dir/r
 
 # fast build rule for target.
 ExperimentalMemCheck/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalMemCheck.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalMemCheck.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalMemCheck.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalMemCheck.dir/build
 .PHONY : ExperimentalMemCheck/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ExperimentalSubmit.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalSubmit.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ExperimentalSubmit.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ExperimentalSubmit.dir/rule
 
 # Convenience name for target.
@@ -449,12 +449,12 @@ ExperimentalSubmit: _deps/tinyxml2-build/CMakeFiles/ExperimentalSubmit.dir/rule
 
 # fast build rule for target.
 ExperimentalSubmit/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalSubmit.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalSubmit.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ExperimentalSubmit.dir/build.make _deps/tinyxml2-build/CMakeFiles/ExperimentalSubmit.dir/build
 .PHONY : ExperimentalSubmit/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ContinuousStart.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousStart.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousStart.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ContinuousStart.dir/rule
 
 # Convenience name for target.
@@ -463,12 +463,12 @@ ContinuousStart: _deps/tinyxml2-build/CMakeFiles/ContinuousStart.dir/rule
 
 # fast build rule for target.
 ContinuousStart/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousStart.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousStart.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousStart.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousStart.dir/build
 .PHONY : ContinuousStart/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ContinuousUpdate.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousUpdate.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousUpdate.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ContinuousUpdate.dir/rule
 
 # Convenience name for target.
@@ -477,12 +477,12 @@ ContinuousUpdate: _deps/tinyxml2-build/CMakeFiles/ContinuousUpdate.dir/rule
 
 # fast build rule for target.
 ContinuousUpdate/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousUpdate.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousUpdate.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousUpdate.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousUpdate.dir/build
 .PHONY : ContinuousUpdate/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ContinuousConfigure.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousConfigure.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousConfigure.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ContinuousConfigure.dir/rule
 
 # Convenience name for target.
@@ -491,12 +491,12 @@ ContinuousConfigure: _deps/tinyxml2-build/CMakeFiles/ContinuousConfigure.dir/rul
 
 # fast build rule for target.
 ContinuousConfigure/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousConfigure.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousConfigure.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousConfigure.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousConfigure.dir/build
 .PHONY : ContinuousConfigure/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ContinuousBuild.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousBuild.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousBuild.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ContinuousBuild.dir/rule
 
 # Convenience name for target.
@@ -505,12 +505,12 @@ ContinuousBuild: _deps/tinyxml2-build/CMakeFiles/ContinuousBuild.dir/rule
 
 # fast build rule for target.
 ContinuousBuild/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousBuild.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousBuild.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousBuild.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousBuild.dir/build
 .PHONY : ContinuousBuild/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ContinuousTest.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousTest.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousTest.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ContinuousTest.dir/rule
 
 # Convenience name for target.
@@ -519,12 +519,12 @@ ContinuousTest: _deps/tinyxml2-build/CMakeFiles/ContinuousTest.dir/rule
 
 # fast build rule for target.
 ContinuousTest/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousTest.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousTest.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousTest.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousTest.dir/build
 .PHONY : ContinuousTest/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ContinuousCoverage.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousCoverage.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousCoverage.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ContinuousCoverage.dir/rule
 
 # Convenience name for target.
@@ -533,12 +533,12 @@ ContinuousCoverage: _deps/tinyxml2-build/CMakeFiles/ContinuousCoverage.dir/rule
 
 # fast build rule for target.
 ContinuousCoverage/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousCoverage.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousCoverage.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousCoverage.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousCoverage.dir/build
 .PHONY : ContinuousCoverage/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ContinuousMemCheck.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousMemCheck.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousMemCheck.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ContinuousMemCheck.dir/rule
 
 # Convenience name for target.
@@ -547,12 +547,12 @@ ContinuousMemCheck: _deps/tinyxml2-build/CMakeFiles/ContinuousMemCheck.dir/rule
 
 # fast build rule for target.
 ContinuousMemCheck/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousMemCheck.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousMemCheck.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousMemCheck.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousMemCheck.dir/build
 .PHONY : ContinuousMemCheck/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/ContinuousSubmit.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousSubmit.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/ContinuousSubmit.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/ContinuousSubmit.dir/rule
 
 # Convenience name for target.
@@ -561,12 +561,12 @@ ContinuousSubmit: _deps/tinyxml2-build/CMakeFiles/ContinuousSubmit.dir/rule
 
 # fast build rule for target.
 ContinuousSubmit/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousSubmit.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousSubmit.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/ContinuousSubmit.dir/build.make _deps/tinyxml2-build/CMakeFiles/ContinuousSubmit.dir/build
 .PHONY : ContinuousSubmit/fast
 
 # Convenience name for target.
 _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/rule
 .PHONY : _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/rule
 
 # Convenience name for target.
@@ -575,7 +575,7 @@ tinyxml2: _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/rule
 
 # fast build rule for target.
 tinyxml2/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/build.make _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/build.make _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/build
 .PHONY : tinyxml2/fast
 
 tinyxml2.o: tinyxml2.cpp.o
@@ -583,7 +583,7 @@ tinyxml2.o: tinyxml2.cpp.o
 
 # target to build an object file
 tinyxml2.cpp.o:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/build.make _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/build.make _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/tinyxml2.cpp.o
 .PHONY : tinyxml2.cpp.o
 
 tinyxml2.i: tinyxml2.cpp.i
@@ -591,7 +591,7 @@ tinyxml2.i: tinyxml2.cpp.i
 
 # target to preprocess a source file
 tinyxml2.cpp.i:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/build.make _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/tinyxml2.cpp.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/build.make _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/tinyxml2.cpp.i
 .PHONY : tinyxml2.cpp.i
 
 tinyxml2.s: tinyxml2.cpp.s
@@ -599,7 +599,7 @@ tinyxml2.s: tinyxml2.cpp.s
 
 # target to generate assembly for a file
 tinyxml2.cpp.s:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/build.make _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/tinyxml2.cpp.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/build.make _deps/tinyxml2-build/CMakeFiles/tinyxml2.dir/tinyxml2.cpp.s
 .PHONY : tinyxml2.cpp.s
 
 # Help Target
@@ -658,7 +658,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles/VerifyGlobs.cmake
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

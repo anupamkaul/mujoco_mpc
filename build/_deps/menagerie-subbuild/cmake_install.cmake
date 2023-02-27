@@ -1,4 +1,4 @@
-# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/menagerie-subbuild
+# Install script for directory: /home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/menagerie-subbuild
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/_deps/menagerie-subbuild/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/anupam/github_robotics/simulator/mujoco_mpc/build/_deps/menagerie-subbuild/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

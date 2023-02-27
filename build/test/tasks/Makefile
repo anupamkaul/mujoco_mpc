@@ -57,10 +57,10 @@ RM = /usr/local/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/mjpc
+CMAKE_SOURCE_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/mjpc
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build
+CMAKE_BINARY_DIR = /home/anupam/github_robotics/simulator/mujoco_mpc/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/test/tasks//CMakeFiles/progress.marks
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tasks/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles 0
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles /home/anupam/github_robotics/simulator/mujoco_mpc/build/test/tasks//CMakeFiles/progress.marks
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tasks/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tasks/clean
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tasks/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,23 +158,23 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tasks/preinstall
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tasks/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tasks/preinstall
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tasks/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles/VerifyGlobs.cmake
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 test/tasks/CMakeFiles/task_test.dir/rule:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tasks/CMakeFiles/task_test.dir/rule
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test/tasks/CMakeFiles/task_test.dir/rule
 .PHONY : test/tasks/CMakeFiles/task_test.dir/rule
 
 # Convenience name for target.
@@ -183,7 +183,7 @@ task_test: test/tasks/CMakeFiles/task_test.dir/rule
 
 # fast build rule for target.
 task_test/fast:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f test/tasks/CMakeFiles/task_test.dir/build.make test/tasks/CMakeFiles/task_test.dir/build
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f test/tasks/CMakeFiles/task_test.dir/build.make test/tasks/CMakeFiles/task_test.dir/build
 .PHONY : task_test/fast
 
 task_test.o: task_test.cc.o
@@ -191,7 +191,7 @@ task_test.o: task_test.cc.o
 
 # target to build an object file
 task_test.cc.o:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f test/tasks/CMakeFiles/task_test.dir/build.make test/tasks/CMakeFiles/task_test.dir/task_test.cc.o
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f test/tasks/CMakeFiles/task_test.dir/build.make test/tasks/CMakeFiles/task_test.dir/task_test.cc.o
 .PHONY : task_test.cc.o
 
 task_test.i: task_test.cc.i
@@ -199,7 +199,7 @@ task_test.i: task_test.cc.i
 
 # target to preprocess a source file
 task_test.cc.i:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f test/tasks/CMakeFiles/task_test.dir/build.make test/tasks/CMakeFiles/task_test.dir/task_test.cc.i
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f test/tasks/CMakeFiles/task_test.dir/build.make test/tasks/CMakeFiles/task_test.dir/task_test.cc.i
 .PHONY : task_test.cc.i
 
 task_test.s: task_test.cc.s
@@ -207,7 +207,7 @@ task_test.s: task_test.cc.s
 
 # target to generate assembly for a file
 task_test.cc.s:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(MAKE) $(MAKESILENT) -f test/tasks/CMakeFiles/task_test.dir/build.make test/tasks/CMakeFiles/task_test.dir/task_test.cc.s
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(MAKE) $(MAKESILENT) -f test/tasks/CMakeFiles/task_test.dir/build.make test/tasks/CMakeFiles/task_test.dir/task_test.cc.s
 .PHONY : task_test.cc.s
 
 # Help Target
@@ -238,7 +238,7 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build/CMakeFiles/VerifyGlobs.cmake
-	cd /home/anupam/github_robotics/simulator/mujoco_mpc_merge/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -P /home/anupam/github_robotics/simulator/mujoco_mpc/build/CMakeFiles/VerifyGlobs.cmake
+	cd /home/anupam/github_robotics/simulator/mujoco_mpc/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
