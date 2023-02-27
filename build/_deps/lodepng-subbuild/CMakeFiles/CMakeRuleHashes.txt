@@ -1,0 +1,11 @@
+# Hashes of file build rules.
+295d0223d525c960d031191a2791b5dd CMakeFiles/lodepng-populate
+fe063bcd2324e6fc8a28152cb6591556 CMakeFiles/lodepng-populate-complete
+064bfc5ba5f6630d6371cbc33b2ec2d6 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-build
+38ba33766aaa999a07d6b95e608f5834 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-configure
+b7849a92ec646f4dc11d0fba6dc07f0b lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-download
+120f47cc4e33daa9a187c78a28515c07 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-install
+32669d8463474e649294e32c76a400b7 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-mkdir
+95db1665d90437c699c495b66bf023fa lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-patch
+f9e4a505cf9b84439b2137209397ffae lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-test
+926df94ef1a3c1d63fba93091fe88f74 lodepng-populate-prefix/src/lodepng-populate-stamp/lodepng-populate-update

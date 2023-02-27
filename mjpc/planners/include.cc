@@ -12,21 +12,23 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "planners/include.h"
+#include "mjpc/planners/include.h"
 
 #include <memory>
 #include <vector>
 
-#include "planners/gradient/planner.h"
-#include "planners/ilqg/planner.h"
-#include "planners/planner.h"
-#include "planners/sampling/planner.h"
+#include "mjpc/planners/gradient/planner.h"
+#include "mjpc/planners/ilqg/planner.h"
+#include "mjpc/planners/ilqs/planner.h"
+#include "mjpc/planners/planner.h"
+#include "mjpc/planners/sampling/planner.h"
 
 namespace mjpc {
 const char kPlannerNames[] =
     "Sampling\n"
     "Gradient\n"
-    "iLQG";
+    "iLQG\n"
+    "iLQS";
 
 // load all available planners
 std::vector<std::unique_ptr<mjpc::Planner>> LoadPlanners() {
@@ -36,6 +38,7 @@ std::vector<std::unique_ptr<mjpc::Planner>> LoadPlanners() {
   planners.emplace_back(new mjpc::SamplingPlanner);
   planners.emplace_back(new mjpc::GradientPlanner);
   planners.emplace_back(new mjpc::iLQGPlanner);
+  planners.emplace_back(new mjpc::iLQSPlanner);
   return planners;
 }
 

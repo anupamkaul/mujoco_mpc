@@ -12,17 +12,18 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "utilities.h"
+#include "mjpc/utilities.h"
 
 #include <atomic>
 #include <cstdint>
 #include <limits>
+#include <vector>
 
 #include "gmock/gmock.h"
 #include "gtest/gtest.h"
 #include <mujoco/mujoco.h>
-#include "test/load.h"
-#include "threadpool.h"
+#include "mjpc/test/load.h"
+#include "mjpc/threadpool.h"
 
 namespace mjpc {
 namespace {
@@ -174,18 +175,31 @@ TEST(UtilitiesTest, ByName) {
   EXPECT_NEAR(position[0], 1.0, 1.0e-5);
   EXPECT_NEAR(velocity[0], 2.0, 1.0e-5);
 
-  // get invalid keyframe
-  double* k0;
-  k0 = KeyFrameByName(model, data, "invalid");
+  // get invalid key qpos
+  double* qpos_invalid;
+  qpos_invalid = KeyQPosByName(model, data, "invalid");
 
-  EXPECT_EQ(k0, nullptr);
+  EXPECT_EQ(qpos_invalid, nullptr);
 
-  // get "home" keyframe
-  double* k1;
-  k1 = KeyFrameByName(model, data, "home");
+  // get "home" key qpos
+  double* qpos_home;
+  qpos_home = KeyQPosByName(model, data, "home");
 
-  EXPECT_NEAR(k1[0], 1.0, 1.0e-5);
-  EXPECT_NEAR(k1[1], 2.0, 1.0e-5);
+  EXPECT_NEAR(qpos_home[0], 1.0, 1.0e-5);
+  EXPECT_NEAR(qpos_home[1], 2.0, 1.0e-5);
+
+  // get invalid key qvel
+  double* qvel_invalid;
+  qvel_invalid = KeyQVelByName(model, data, "invalid");
+
+  EXPECT_EQ(qvel_invalid, nullptr);
+
+  // get "home" key qvel
+  double* qvel_home;
+  qvel_home = KeyQVelByName(model, data, "home");
+
+  EXPECT_NEAR(qvel_home[0], -1.0, 1.0e-5);
+  EXPECT_NEAR(qvel_home[1], -2.0, 1.0e-5);
 
   // delete model + data
   mj_deleteData(data);
@@ -228,7 +242,7 @@ TEST(UtilitiesTest, PowerSequence) {
 
 TEST(UtilitiesTest, FindInterval) {
   // sequence
-  double sequence[4] = {-1.0, 0.0, 1.0, 2.0};
+  std::vector<double> sequence{-1.0, 0.0, 1.0, 2.0};
   int length = 4;
 
   // bounds
@@ -255,7 +269,7 @@ TEST(UtilitiesTest, FindInterval) {
 
 TEST(UtilitiesTest, LinearInterpolation) {
   // x
-  double x[2] = {1.0, 2.0};
+  std::vector<double> x{1.0, 2.0};
   double y[2] = {1.0, 2.0};
 
   // inside

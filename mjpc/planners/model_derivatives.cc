@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "planners/model_derivatives.h"
+#include "mjpc/planners/model_derivatives.h"
 
 #include <algorithm>
 
 #include <mujoco/mujoco.h>
-#include "threadpool.h"
-#include "utilities.h"
+#include "mjpc/threadpool.h"
+#include "mjpc/utilities.h"
 
 namespace mjpc {
 
@@ -60,19 +60,16 @@ void ModelDerivatives::Compute(const mjModel* m,
         SetState(m, d, x + t * dim_state);
         d->time = h[t];
 
+        // set action
+        mju_copy(d->ctrl, u + t * dim_action, dim_action);
+
         // Jacobians
         if (t == T - 1) {
-          // set action
-          mju_zero(d->ctrl, dim_action);
-
           // Jacobians
           mjd_transitionFD(m, d, tol, mode, nullptr, nullptr,
                            DataAt(C, t * (dim_sensor * dim_state_derivative)),
                            nullptr);
         } else {
-          // set action
-          mju_copy(d->ctrl, u + t * dim_action, dim_action);
-
           // derivatives
           mjd_transitionFD(
               m, d, tol, mode,

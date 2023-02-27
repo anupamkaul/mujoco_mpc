@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "norm.h"
+#include "mjpc/norm.h"
 
 #include <algorithm>
 #include <cmath>
@@ -62,6 +62,16 @@ double Norm(double* g, double* H, const double* x, const double* params,
   if (H) mju_zero(H, n * n);
 
   switch (type) {
+    case NormType::kNull: {
+      y = x[0];
+      if (g) {
+        g[0] = 1.0;
+      }
+      if (H) {
+        H[0] = 0.0;
+      }
+      break;
+    }
     case NormType::kQuadratic:  {  // y = 0.5 * x' * x
       for (int i = 0; i < n; i++) {
         y += x[i] * x[i];

@@ -21,15 +21,15 @@
 #include <vector>
 
 #include <mujoco/mujoco.h>
-#include "planners/cost_derivatives.h"
-#include "planners/gradient/gradient.h"
-#include "planners/gradient/policy.h"
-#include "planners/gradient/settings.h"
-#include "planners/gradient/spline_mapping.h"
-#include "planners/model_derivatives.h"
-#include "planners/planner.h"
-#include "states/state.h"
-#include "trajectory.h"
+#include "mjpc/planners/cost_derivatives.h"
+#include "mjpc/planners/gradient/gradient.h"
+#include "mjpc/planners/gradient/policy.h"
+#include "mjpc/planners/gradient/settings.h"
+#include "mjpc/planners/gradient/spline_mapping.h"
+#include "mjpc/planners/model_derivatives.h"
+#include "mjpc/planners/planner.h"
+#include "mjpc/states/state.h"
+#include "mjpc/trajectory.h"
 
 namespace mjpc {
 
@@ -61,7 +61,7 @@ class GradientPlanner : public Planner {
   void OptimizePolicy(int horizon, ThreadPool& pool) override;
 
   // compute trajectory using nominal policy
-  void NominalTrajectory(int horizon) override;
+  void NominalTrajectory(int horizon, ThreadPool& pool) override;
 
   // compute action from policy
   void ActionFromPolicy(double* action, const double* state,
@@ -83,8 +83,8 @@ class GradientPlanner : public Planner {
   void GUI(mjUI& ui) override;
 
   // planner-specific plots
-  void Plots(mjvFigure* fig_planner, mjvFigure* fig_timer,
-             int planning) override;
+  void Plots(mjvFigure* fig_planner, mjvFigure* fig_timer, int planner_shift,
+             int timer_shift, int planning) override;
 
   // ----- members ----- //
   mjModel* model;
@@ -94,6 +94,7 @@ class GradientPlanner : public Planner {
   std::vector<double> state;
   double time;
   std::vector<double> mocap;
+  std::vector<double> userdata;
 
   // policy
   GradientPolicy policy;
@@ -130,7 +131,7 @@ class GradientPlanner : public Planner {
   std::vector<std::unique_ptr<SplineMapping>> mappings;
 
   // step sizes
-  double improvement_step[kMaxTrajectory];
+  double linesearch_steps[kMaxTrajectory];
 
   // best trajectory id
   int winner;
@@ -139,7 +140,7 @@ class GradientPlanner : public Planner {
   GradientPlannerSettings settings;
 
   // values
-  double step_size;
+  double action_step;
   double expected;
   double improvement;
   double surprise;

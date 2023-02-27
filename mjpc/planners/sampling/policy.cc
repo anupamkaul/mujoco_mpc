@@ -12,13 +12,13 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "planners/sampling/policy.h"
+#include "mjpc/planners/sampling/policy.h"
 
 #include <algorithm>
 
 #include <mujoco/mujoco.h>
-#include "trajectory.h"
-#include "utilities.h"
+#include "mjpc/trajectory.h"
+#include "mjpc/utilities.h"
 
 namespace mjpc {
 
@@ -60,19 +60,19 @@ void SamplingPolicy::Action(double* action, const double* state,
                             double time) const {
   // find times bounds
   int bounds[2];
-  FindInterval(bounds, times.data(), time, num_spline_points);
+  FindInterval(bounds, times, time, num_spline_points);
 
   // ----- get action ----- //
 
   if (bounds[0] == bounds[1] ||
       representation == PolicyRepresentation::kZeroSpline) {
-    ZeroInterpolation(action, time, times.data(), parameters.data(), model->nu,
+    ZeroInterpolation(action, time, times, parameters.data(), model->nu,
                       num_spline_points);
   } else if (representation == PolicyRepresentation::kLinearSpline) {
-    LinearInterpolation(action, time, times.data(), parameters.data(),
-                        model->nu, num_spline_points);
+    LinearInterpolation(action, time, times, parameters.data(), model->nu,
+                        num_spline_points);
   } else if (representation == PolicyRepresentation::kCubicSpline) {
-    CubicInterpolation(action, time, times.data(), parameters.data(), model->nu,
+    CubicInterpolation(action, time, times, parameters.data(), model->nu,
                        num_spline_points);
   }
 

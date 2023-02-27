@@ -16,13 +16,17 @@
 #define MJPC_SIMULATE_H_
 
 #include <atomic>
+#include <chrono>
 #include <condition_variable>
+#include <memory>
 #include <mutex>
+#include <ratio>
 #include <thread>
+#include <vector>
 
-#include <GLFW/glfw3.h>
 #include <mujoco/mujoco.h>
-#include "agent.h"
+#include <platform_ui_adapter.h>
+#include "mjpc/agent.h"
 
 #ifdef MJSIMULATE_STATIC
   // static library
@@ -44,8 +48,11 @@ namespace mujoco {
 // Simulate states not contained in MuJoCo structures
 class MJSIMULATEAPI Simulate {
  public:
+  using Clock = std::chrono::steady_clock;
+  static_assert(std::ratio_less_equal_v<Clock::period, std::milli>);
+
   // create object and initialize the simulate ui
-  Simulate() = default;
+  Simulate(std::unique_ptr<PlatformUIAdapter> platform_ui);
 
   // Apply UI pose perturbations to model and data
   void applyposepertubations(int flg_paused);
@@ -55,7 +62,7 @@ class MJSIMULATEAPI Simulate {
 
   // Request that the Simulate UI thread render a new model
   // optionally delete the old model and data when done
-  void load(const char* file, mjModel* m, mjData* d, bool delete_old_m_d);
+  void load(std::string file, mjModel* m, mjData* d, bool delete_old_m_d);
 
   // functions below are used by the renderthread
   // load mjb or xml model that has been requested by load()
@@ -67,14 +74,9 @@ class MJSIMULATEAPI Simulate {
   // render the ui to the window
   void render();
 
-  // clear callbacks registered in external structures
-  void clearcallback();
-
   // loop to render the UI (must be called from main thread because of MacOS)
-  // https://discourse.glfw.org/t/multithreading-glfw/573/5
   void renderloop();
 
-  // constants
   static constexpr int kMaxFilenameLength = 1000;
 
   // model and data to be visualized
@@ -119,11 +121,10 @@ class MJSIMULATEAPI Simulate {
   //   0: model loaded or no load requested.
   int loadrequest = 0;
 
-  // strings
   char loadError[kMaxFilenameLength] = "";
-  char dropfilename[kMaxFilenameLength] = "";
-  char filename[kMaxFilenameLength] = "";
-  char previous_filename[kMaxFilenameLength] = "";
+  std::string dropfilename;
+  std::string filename;
+  std::string previous_filename;
 
   // time synchronization
   int realTimeIndex = 0;
@@ -164,15 +165,13 @@ class MJSIMULATEAPI Simulate {
   mjvFigure figsensor = {};
 
   // OpenGL rendering and UI
-  GLFWvidmode vmode = {};
   int refreshRate = 60;
   int windowpos[2] = {0};
   int windowsize[2] = {0};
-  mjrContext con = {};
-  GLFWwindow* window = nullptr;
-  mjuiState uistate = {};
   mjUI ui0 = {};
   mjUI ui1 = {};
+  std::unique_ptr<PlatformUIAdapter> platform_ui;
+  mjuiState& uistate;
 
   // agent
   mjpc::Agent agent;

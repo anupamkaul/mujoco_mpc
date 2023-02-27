@@ -22,7 +22,9 @@
 #include <string>
 #include <string_view>
 #include <type_traits>
+#include <vector>
 
+#include <absl/container/flat_hash_map.h>
 #include <mujoco/mujoco.h>
 
 namespace mjpc {
@@ -38,6 +40,9 @@ void GetState(const mjModel* model, const mjData* data, double* state);
 
 // get numerical data from a custom element in mjModel with the given name
 double* GetCustomNumericData(const mjModel* m, std::string_view name);
+
+// get text data from a custom element in mjModel with the given name
+char* GetCustomTextData(const mjModel* m, std::string_view name);
 
 // get a scalar value from a custom element in mjModel with the given name
 template <typename T>
@@ -57,6 +62,30 @@ T GetNumberOrDefault(T default_value, const mjModel* m, std::string_view name) {
   return GetNumber<T>(m, name).value_or(default_value);
 }
 
+// reinterpret double as int
+int ReinterpretAsInt(double value);
+
+// reinterpret int64_t as double
+double ReinterpretAsDouble(int64_t value);
+
+// returns a map from custom field name to the list of valid values for that
+// field
+absl::flat_hash_map<std::string, std::vector<std::string>>
+ResidualSelectionLists(const mjModel* m);
+
+// get the string selected in a drop down with the given name, given the value
+// in the residual parameters vector
+std::string ResidualSelection(const mjModel* m, std::string_view name,
+                              double residual_parameter);
+// returns a value for residual parameters that fits the given text value
+// in the given list
+double ResidualParameterFromSelection(const mjModel* m, std::string_view name,
+                                      std::string_view value);
+
+// returns a default value to put in residual parameters, given the index of a
+// custom numeric attribute in the model
+double DefaultResidualSelection(const mjModel* m, int numeric_index);
+
 // Clamp x between bounds, e.g., bounds[0] <= x[i] <= bounds[1]
 void Clamp(double* x, const double* bounds, int n);
 
@@ -64,39 +93,54 @@ void Clamp(double* x, const double* bounds, int n);
 double* SensorByName(const mjModel* m, const mjData* d,
                      const std::string& name);
 
+double DefaultParameterValue(const mjModel* model, std::string_view name);
+
+int ParameterIndex(const mjModel* model, std::string_view name);
+
+int CostTermByName(const mjModel* m, const std::string& name);
+
+// sanity check that residual size equals total user-sensor dimension
+void CheckSensorDim(const mjModel* model, int residual_size);
+
 // get traces from sensors
 void GetTraces(double* traces, const mjModel* m, const mjData* d,
                int num_trace);
 
-// get keyframe data using string
-double* KeyFrameByName(const mjModel* m, const mjData* d,
-                       const std::string& name);
+// get keyframe `qpos` data using string
+double* KeyQPosByName(const mjModel* m, const mjData* d,
+                      const std::string& name);
+
+// get keyframe `qvel` data using string
+double* KeyQVelByName(const mjModel* m, const mjData* d,
+                      const std::string& name);
 
 // return a power transformed sequence
 void PowerSequence(double* t, double t_step, double t1, double t2, double p,
                    double N);
 
 // find interval in monotonic sequence containing value
-void FindInterval(int* bounds, const double* sequence, double value,
-                  int length);
+void FindInterval(int* bounds, const std::vector<double>& sequence,
+                  double value, int length);
 
 // zero-order interpolation
-void ZeroInterpolation(double* output, double x, const double* xs,
+void ZeroInterpolation(double* output, double x, const std::vector<double>& xs,
                        const double* ys, int dim, int length);
 
 // linear interpolation
-void LinearInterpolation(double* output, double x, const double* xs,
-                         const double* ys, int dim, int length);
+void LinearInterpolation(double* output, double x,
+                         const std::vector<double>& xs, const double* ys,
+                         int dim, int length);
 
 // coefficients for cubic interpolation
-void CubicCoefficients(double* coefficients, double x, const double* xs, int T);
+void CubicCoefficients(double* coefficients, double x,
+                       const std::vector<double>& xs, int T);
 
 // finite-difference vector
-double FiniteDifferenceSlope(double x, const double* xs, const double* ys,
-                             int dim, int length, int i);
+double FiniteDifferenceSlope(double x, const std::vector<double>& xs,
+                             const double* ys, int dim, int length, int i);
 
 // cubic polynomial interpolation
-void CubicInterpolation(double* output, double x, const double* xs,
+void CubicInterpolation(double* output, double x, const std::vector<double>& xs,
                         const double* ys, int dim, int length);
 
 // returns the path to the directory containing the current executable
@@ -115,8 +159,14 @@ void StateDiff(const mjModel* m, mjtNum* ds, const mjtNum* s1, const mjtNum* s2,
 // set x to be the point on the segment [p0 p1] that is nearest to x
 void ProjectToSegment(double x[3], const double p0[3], const double p1[3]);
 
+// find frame that best matches 4 feet, z points to body
+void FootFrame(double feet_pos[3], double feet_mat[9], double feet_quat[4],
+               const double body[3],
+               const double foot0[3], const double foot1[3],
+               const double foot2[3], const double foot3[3]);
+
 // default cost colors
-extern const float CostColors[10][3];
+extern const float CostColors[20][3];
 
 // plots - vertical line
 void PlotVertical(mjvFigure* fig, double time, double min_value,
@@ -177,6 +227,14 @@ using UniqueMjData = std::unique_ptr<mjData, void (*)(mjData*)>;
 inline UniqueMjData MakeUniqueMjData(mjData* d) {
   return UniqueMjData(d, mj_deleteData);
 }
+
+
+// returns point in 2D convex hull that is nearest to query
+void NearestInHull(mjtNum res[2], const mjtNum query[2],
+                   const mjtNum* points, const int* hull, int num_hull);
+
+// find the convex hull of a set of 2D points
+int Hull2D(int* hull, int num_points, const mjtNum* points);
 
 }  // namespace mjpc
 

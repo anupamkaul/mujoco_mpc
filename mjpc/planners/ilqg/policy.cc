@@ -12,14 +12,14 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "planners/ilqg/policy.h"
+#include "mjpc/planners/ilqg/policy.h"
 
 #include <algorithm>
 
 #include <mujoco/mujoco.h>
-#include "task.h"
-#include "trajectory.h"
-#include "utilities.h"
+#include "mjpc/task.h"
+#include "mjpc/trajectory.h"
+#include "mjpc/utilities.h"
 
 namespace mjpc {
 
@@ -74,6 +74,8 @@ void iLQGPolicy::Reset(int horizon) {
       0.0);
   std::fill(state_interp.begin(),
             state_interp.begin() + model->nq + model->nv + model->na, 0.0);
+
+  feedback_scaling = 1.0;
 }
 
 // set action from policy
@@ -86,66 +88,64 @@ void iLQGPolicy::Action(double* action, const double* state,
 
   // find times bounds
   int bounds[2];
-  FindInterval(bounds, trajectory.times.data(), time, trajectory.horizon);
+  FindInterval(bounds, trajectory.times, time, trajectory.horizon);
 
   // interpolate
   if (bounds[0] == bounds[1] || representation == 0) {
     // action reference
-    ZeroInterpolation(action, time, trajectory.times.data(),
-                      trajectory.actions.data(), model->nu,
-                      trajectory.horizon - 1);
+    ZeroInterpolation(action, time, trajectory.times, trajectory.actions.data(),
+                      model->nu, trajectory.horizon - 1);
 
     // state reference
-    ZeroInterpolation(state_interp.data(), time, trajectory.times.data(),
+    ZeroInterpolation(state_interp.data(), time, trajectory.times,
                       trajectory.states.data(), dim_state, trajectory.horizon);
 
     // gains
-    ZeroInterpolation(feedback_gain_scratch.data(), time,
-                      trajectory.times.data(), feedback_gain.data(),
-                      dim_action * dim_state_derivative,
+    ZeroInterpolation(feedback_gain_scratch.data(), time, trajectory.times,
+                      feedback_gain.data(), dim_action * dim_state_derivative,
                       trajectory.horizon - 1);
   } else if (representation == 1) {
     // action
-    LinearInterpolation(action, time, trajectory.times.data(),
+    LinearInterpolation(action, time, trajectory.times,
                         trajectory.actions.data(), model->nu,
                         trajectory.horizon - 1);
 
     // state
-    LinearInterpolation(state_interp.data(), time, trajectory.times.data(),
+    LinearInterpolation(state_interp.data(), time, trajectory.times,
                         trajectory.states.data(), dim_state,
                         trajectory.horizon);
 
     // normalize quaternions
     mj_normalizeQuat(model, state_interp.data());
 
-    LinearInterpolation(feedback_gain_scratch.data(), time,
-                        trajectory.times.data(), feedback_gain.data(),
-                        dim_action * dim_state_derivative,
+    LinearInterpolation(feedback_gain_scratch.data(), time, trajectory.times,
+                        feedback_gain.data(), dim_action * dim_state_derivative,
                         trajectory.horizon - 1);
   } else if (representation == 2) {
     // action
-    CubicInterpolation(action, time, trajectory.times.data(),
+    CubicInterpolation(action, time, trajectory.times,
                        trajectory.actions.data(), model->nu,
                        trajectory.horizon - 1);
 
     // state
-    CubicInterpolation(state_interp.data(), time, trajectory.times.data(),
+    CubicInterpolation(state_interp.data(), time, trajectory.times,
                        trajectory.states.data(), dim_state, trajectory.horizon);
 
     // normalize quaternions
     mj_normalizeQuat(model, state_interp.data());
 
-    CubicInterpolation(feedback_gain_scratch.data(), time,
-                       trajectory.times.data(), feedback_gain.data(),
-                       dim_action * dim_state_derivative,
+    CubicInterpolation(feedback_gain_scratch.data(), time, trajectory.times,
+                       feedback_gain.data(), dim_action * dim_state_derivative,
                        trajectory.horizon - 1);
   }
 
   // add feedback
-  StateDiff(model, state_scratch.data(), state_interp.data(), state, 1.0);
-  mju_mulMatVec(action_scratch.data(), feedback_gain_scratch.data(),
-                state_scratch.data(), dim_action, dim_state_derivative);
-  mju_addTo(action, action_scratch.data(), dim_action);
+  if (state) {
+    StateDiff(model, state_scratch.data(), state_interp.data(), state, 1.0);
+    mju_mulMatVec(action_scratch.data(), feedback_gain_scratch.data(),
+                  state_scratch.data(), dim_action, dim_state_derivative);
+    mju_addToScl(action, action_scratch.data(), feedback_scaling, dim_action);
+  }
 
   // clamp controls
   Clamp(action, model->actuator_ctrlrange, dim_action);

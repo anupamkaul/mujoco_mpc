@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-#include "utilities.h"
+#include "mjpc/utilities.h"
 
 #include <cerrno>
 #include <cmath>
@@ -24,11 +24,17 @@
 #include <new>
 #include <string>
 #include <string_view>
+#include <unordered_map>
+#include <vector>
 
 // DEEPMIND INTERNAL IMPORT
+#include <absl/container/flat_hash_map.h>
+#include <absl/strings/match.h>
 #include <absl/strings/str_cat.h>
+#include <absl/strings/str_split.h>
+#include <mujoco/mjmodel.h>
 #include <mujoco/mujoco.h>
-#include "array_safety.h"
+#include "mjpc/array_safety.h"
 
 #if defined(__APPLE__) || defined(_WIN32)
 #include <thread>
@@ -72,11 +78,86 @@ double* GetCustomNumericData(const mjModel* m, std::string_view name) {
   return nullptr;
 }
 
+// get text data from custom using string
+char* GetCustomTextData(const mjModel* m, std::string_view name) {
+  for (int i = 0; i < m->ntextdata; i++) {
+    if (std::string_view(m->names + m->name_textadr[i]) == name) {
+      return m->text_data + m->text_adr[i];
+    }
+  }
+  return nullptr;
+}
+
 // Clamp x between bounds, e.g., bounds[0] <= x[i] <= bounds[1]
 void Clamp(double* x, const double* bounds, int n) {
   for (int i = 0; i < n; i++) {
     x[i] = mju_clip(x[i], bounds[2 * i], bounds[2 * i + 1]);
   }
+}
+
+int ReinterpretAsInt(double value) {
+  return *reinterpret_cast<const int*>(&value);
+}
+
+double ReinterpretAsDouble(int64_t value) {
+  return *reinterpret_cast<const double*>(&value);
+}
+
+absl::flat_hash_map<std::string, std::vector<std::string>>
+ResidualSelectionLists(const mjModel* m) {
+  absl::flat_hash_map<std::string, std::vector<std::string>> result;
+  for (int i = 0; i < m->ntext; i++) {
+    if (!absl::StartsWith(std::string_view(m->names + m->name_textadr[i]),
+                          "residual_list_")) {
+      continue;
+    }
+    std::string name = &m->names[m->name_textadr[i]];
+    std::string_view options(m->text_data + m->text_adr[i]);
+    result[absl::StripPrefix(name, "residual_list_")] =
+        absl::StrSplit(options, '|');
+  }
+  return result;
+}
+
+std::string ResidualSelection(const mjModel* m, std::string_view name,
+                              double residual_parameter) {
+  std::string list_name = absl::StrCat("residual_list_", name);
+
+  // we're using a double field to store an integer - reinterpret as an int
+  int list_index = ReinterpretAsInt(residual_parameter);
+
+  for (int i = 0; i < m->ntext; i++) {
+    if (list_name == &m->names[m->name_textadr[i]]) {
+      // get the nth element in the list of options (without constructing a
+      // vector<string>)
+      std::string_view options(m->text_data + m->text_adr[i]);
+      for (std::string_view value : absl::StrSplit(options, '|')) {
+        if (list_index == 0) return std::string(value);
+        list_index--;
+      }
+    }
+  }
+  return "";
+}
+
+double ResidualParameterFromSelection(const mjModel* m, std::string_view name,
+                                      const std::string_view value) {
+  std::string list_name = absl::StrCat("residual_list_", name);
+  for (int i = 0; i < m->ntext; i++) {
+    if (list_name == &m->names[m->name_textadr[i]]) {
+      int64_t list_index = 0;
+      std::string_view options(m->text_data + m->text_adr[i],
+                               m->text_size[i] - 1);
+      std::vector<std::string> values = absl::StrSplit(options, '|');
+      for (std::string_view v : absl::StrSplit(options, '|')) {
+        if (v == value) {
+          return ReinterpretAsDouble(list_index);
+        }
+        list_index++;
+      }
+    }
+  }
+  return 0;
 }
 
 // get sensor data using string
@@ -88,6 +169,74 @@ double* SensorByName(const mjModel* m, const mjData* d,
     return nullptr;
   } else {
     return d->sensordata + m->sensor_adr[id];
+  }
+}
+
+// get default residual parameter data using string
+double DefaultParameterValue(const mjModel* model, std::string_view name) {
+  int id = mj_name2id(model, mjOBJ_NUMERIC,
+                      absl::StrCat("residual_", name).c_str());
+  if (id == -1) {
+    mju_error_s("Parameter '%s' not found", std::string(name).c_str());
+    return 0;
+  }
+  return model->numeric_data[model->numeric_adr[id]];
+}
+
+// get index to residual parameter data using string
+int ParameterIndex(const mjModel* model, std::string_view name) {
+  int id = mj_name2id(model, mjOBJ_NUMERIC,
+                      absl::StrCat("residual_", name).c_str());
+
+  if (id == -1) {
+    mju_error_s("Parameter '%s' not found", std::string(name).c_str());
+  }
+
+  int i;
+  for (i = 0; i < model->nnumeric; i++) {
+    const char* first_residual = mj_id2name(model, mjOBJ_NUMERIC, i);
+    if (absl::StartsWith(first_residual, "residual_")) {
+      break;
+    }
+  }
+  return id - i;
+}
+
+double DefaultResidualSelection(const mjModel* m, int numeric_index) {
+  // list selections are stored as ints, but numeric values are doubles.
+  int64_t value = m->numeric_data[m->numeric_adr[numeric_index]];
+  return *reinterpret_cast<const double*>(&value);
+}
+
+int CostTermByName(const mjModel* m, const std::string& name) {
+  int id = mj_name2id(m, mjOBJ_SENSOR, name.c_str());
+  if (id == -1 || m->sensor_type[id] != mjSENS_USER) {
+    std::cerr << "cost term \"" << name << "\" not found.\n";
+    return -1;
+  } else {
+    return id;
+  }
+}
+
+void CheckSensorDim(const mjModel* model, int residual_size) {
+  int user_sensor_dim = 0;
+  bool encountered_nonuser_sensor = false;
+  for (int i=0; i < model->nsensor; i++) {
+    if (model->sensor_type[i] == mjSENS_USER) {
+      user_sensor_dim += model->sensor_dim[i];
+      if (encountered_nonuser_sensor) {
+        mju_error("user type sensors must come before other sensor types");
+      }
+    } else {
+      encountered_nonuser_sensor = true;
+    }
+  }
+  if (user_sensor_dim != residual_size) {
+    char msg[1024];
+    snprintf(msg, sizeof(msg),
+             "mismatch between total user-sensor dimension %d "
+             "and residual size %d", user_sensor_dim, residual_size);
+    mju_error(msg);
   }
 }
 
@@ -111,14 +260,25 @@ void GetTraces(double* traces, const mjModel* m, const mjData* d,
   }
 }
 
-// get keyframe data using string
-double* KeyFrameByName(const mjModel* m, const mjData* d,
-                       const std::string& name) {
+// get keyframe `qpos` data using string
+double* KeyQPosByName(const mjModel* m, const mjData* d,
+                      const std::string& name) {
   int id = mj_name2id(m, mjOBJ_KEY, name.c_str());
   if (id == -1) {
     return nullptr;
   } else {
     return m->key_qpos + m->nq * id;
+  }
+}
+
+// get keyframe `qvel` data using string
+double* KeyQVelByName(const mjModel* m, const mjData* d,
+                      const std::string& name) {
+  int id = mj_name2id(m, mjOBJ_KEY, name.c_str());
+  if (id == -1) {
+    return nullptr;
+  } else {
+    return m->key_qvel + m->nv * id;
   }
 }
 
@@ -138,38 +298,29 @@ void PowerSequence(double* t, double t_step, double t1, double t2, double p,
 }
 
 // find interval in monotonic sequence containing value
-void FindInterval(int* bounds, const double* sequence, double value,
-                  int length) {
-  // final index
-  int T = length - 1;
+void FindInterval(int* bounds, const std::vector<double>& sequence,
+                  double value, int length) {
+  // get bounds
+  auto it =
+      std::upper_bound(sequence.begin(), sequence.begin() + length, value);
+  int upper_bound = it - sequence.begin();
+  int lower_bound = upper_bound - 1;
 
   // set bounds
-  bounds[0] = 0;
-  bounds[1] = T;
-
-  // index evaluation
-  int middle;
-
-  if (sequence[0] <= value) {
-    if (sequence[T] > value) {
-      while (bounds[0] < bounds[1] - 1) {
-        middle = std::ceil((bounds[0] + bounds[1]) / 2.0 - 1e-10);
-        if (sequence[middle] <= value) {
-          bounds[0] = middle;
-        } else {
-          bounds[1] = middle;
-        }
-      }
-    } else {
-      bounds[0] = bounds[1];
-    }
+  if (lower_bound < 0) {
+    bounds[0] = 0;
+    bounds[1] = 0;
+  } else if (lower_bound > length - 1) {
+    bounds[0] = length - 1;
+    bounds[1] = length - 1;
   } else {
-    bounds[1] = bounds[0];
+    bounds[0] = mju_max(lower_bound, 0);
+    bounds[1] = mju_min(upper_bound, length - 1);
   }
 }
 
 // zero-order interpolation
-void ZeroInterpolation(double* output, double x, const double* xs,
+void ZeroInterpolation(double* output, double x, const std::vector<double>& xs,
                        const double* ys, int dim, int length) {
   // bounds
   int bounds[2];
@@ -180,8 +331,9 @@ void ZeroInterpolation(double* output, double x, const double* xs,
 }
 
 // linear interpolation
-void LinearInterpolation(double* output, double x, const double* xs,
-                         const double* ys, int dim, int length) {
+void LinearInterpolation(double* output, double x,
+                         const std::vector<double>& xs, const double* ys,
+                         int dim, int length) {
   // bounds
   int bounds[2];
   FindInterval(bounds, xs, x, length);
@@ -201,8 +353,8 @@ void LinearInterpolation(double* output, double x, const double* xs,
 }
 
 // coefficients for cubic interpolation
-void CubicCoefficients(double* coefficients, double x, const double* xs,
-                       int T) {
+void CubicCoefficients(double* coefficients, double x,
+                       const std::vector<double>& xs, int T) {
   // find interval
   int bounds[2];
   FindInterval(bounds, xs, x, T);
@@ -227,8 +379,8 @@ void CubicCoefficients(double* coefficients, double x, const double* xs,
 }
 
 // finite-difference vector
-double FiniteDifferenceSlope(double x, const double* xs, const double* ys,
-                             int dim, int length, int i) {
+double FiniteDifferenceSlope(double x, const std::vector<double>& xs,
+                             const double* ys, int dim, int length, int i) {
   // find interval
   int bounds[2];
   FindInterval(bounds, xs, x, length);
@@ -262,7 +414,7 @@ double FiniteDifferenceSlope(double x, const double* xs, const double* ys,
 }
 
 // cubic polynominal interpolation
-void CubicInterpolation(double* output, double x, const double* xs,
+void CubicInterpolation(double* output, double x, const std::vector<double>& xs,
                         const double* ys, int dim, int length) {
   // find interval
   int bounds[2];
@@ -419,6 +571,45 @@ void StateDiff(const mjModel* m, mjtNum* ds, const mjtNum* s1, const mjtNum* s2,
   }
 }
 
+// find frame that best matches 4 feet, z points to body
+void FootFrame(double feet_pos[3], double feet_mat[9], double feet_quat[4],
+               const double body[3],
+               const double foot0[3], const double foot1[3],
+               const double foot2[3], const double foot3[3]) {
+    // average foot pos
+    double pos[3];
+    for (int i = 0; i < 3; i++) {
+      pos[i] = 0.25 * (foot0[i] + foot1[i] + foot2[i] + foot3[i]);
+    }
+
+    // compute feet covariance
+    double cov[9] = {0};
+    for (const double* foot : {foot0, foot1, foot2, foot3}) {
+      double dif[3], difTdif[9];
+      mju_sub3(dif, foot, pos);
+      mju_sqrMatTD(difTdif, dif, nullptr, 1, 3);
+      mju_addTo(cov, difTdif, 9);
+    }
+
+    // eigendecompose
+    double eigval[3], quat[4], mat[9];
+    mju_eig3(eigval, mat, quat, cov);
+
+    // make sure foot-plane normal (z axis) points to body
+    double zaxis[3] = {mat[2], mat[5], mat[8]};
+    double to_body[3];
+    mju_sub3(to_body, body, pos);
+    if (mju_dot3(zaxis, to_body) < 0) {
+      // flip both z and y (rotate around x), to maintain frame handedness
+      for (const int i : {1, 2, 4, 5, 7, 8}) mat[i] *= -1;
+    }
+
+    // copy outputs
+    if (feet_pos) mju_copy3(feet_pos, pos);
+    if (feet_mat) mju_copy(feet_mat, mat, 9);
+    if (feet_quat) mju_mat2Quat(feet_quat, mat);
+}
+
 // set x to be the point on the segment [p0 p1] that is nearest to x
 void ProjectToSegment(double x[3], const double p0[3], const double p1[3]) {
   double axis[3];
@@ -444,10 +635,13 @@ void ProjectToSegment(double x[3], const double p0[3], const double p1[3]) {
 }
 
 // default cost colors
-const float CostColors[10][3]{
-    {1.0, 0.0, 0.0}, {0.0, 1.0, 0.0}, {0.0, 0.0, 1.0}, {1.0, 1.0, 0.0},
-    {0.0, 1.0, 1.0}, {0.5, 0.0, 0.0}, {0.0, 0.5, 0.0}, {0.0, 0.0, 0.5},
-    {0.5, 0.5, 0.0}, {0.0, 0.5, 0.5},
+const float CostColors[20][3]{
+    {1.0, 0.0, 0.0}, {0.0, 1.0, 0.0}, {0.3, 0.3, 1.0}, {1.0, 1.0, 0.0},
+    {0.0, 1.0, 1.0}, {1.0, 0.5, 0.5}, {0.5, 1.0, 0.5}, {0.5, 0.5, 1.0},
+    {1.0, 1.0, 0.5}, {0.5, 1.0, 1.0},
+    {1.0, 0.0, 0.0}, {0.0, 1.0, 0.0}, {0.3, 0.3, 1.0}, {1.0, 1.0, 0.0},
+    {0.0, 1.0, 1.0}, {1.0, 0.5, 0.5}, {0.5, 1.0, 0.5}, {0.5, 0.5, 1.0},
+    {1.0, 1.0, 0.5}, {0.5, 1.0, 1.0},
 };
 
 // plots - vertical line
@@ -594,6 +788,152 @@ void LogScale(double* values, double max_value, double min_value, int steps) {
   for (int i = 0; i < steps; i++) {
     values[i] = mju_exp(mju_log(min_value) + i * step);
   }
+}
+
+// ============== 2d convex hull ==============
+
+// note: written in MuJoCo-style C for possible future inclusion
+namespace {  // private functions in an anonymous namespace
+
+// 2d vector dot-product
+mjtNum mju_dot2(const mjtNum vec1[2], const mjtNum vec2[2]) {
+  return vec1[0]*vec2[0] + vec1[1]*vec2[1];
+}
+
+// 2d vector squared distance
+mjtNum mju_sqrdist2(const mjtNum vec1[2], const mjtNum vec2[2]) {
+  const mjtNum diff[2] = {vec1[0]-vec2[0], vec1[1]-vec2[1]};
+  return mju_dot2(diff, diff);
+}
+
+// returns true if edge to candidate is to the right of edge to next
+bool IsEdgeOutside(const mjtNum current[2], const mjtNum next[2],
+                   const mjtNum candidate[2]) {
+  mjtNum current_edge[2] = {next[0] - current[0], next[1] - current[1]};
+  mjtNum candidate_edge[2] = {candidate[0] - current[0],
+                              candidate[1] - current[1]};
+  mjtNum rotated_edge[2] = {current_edge[1], -current_edge[0]};
+  mjtNum projection = mju_dot2(candidate_edge, rotated_edge);
+
+  // check if candidate edge is to the right
+  if (projection > mjMINVAL) {
+    // actually to the right: accept
+    return true;
+  } else if (abs(projection) < mjMINVAL) {
+    // numerically equivalent: accept if longer
+    mjtNum current_length2 = mju_dot2(current_edge, current_edge);
+    mjtNum candidate_length2 = mju_dot2(candidate_edge, candidate_edge);
+    return (candidate_length2 > current_length2);
+  }
+  // not to the right
+  return false;
+}
+
+// returns 2D point on line segment from v0 to v1 that is nearest to query point
+void ProjectToSegment2D(mjtNum res[2], const mjtNum query[2],
+                        const mjtNum v0[2], const mjtNum v1[2]) {
+  mjtNum axis[2] = {v1[0] - v0[0], v1[1] - v0[1]};
+  mjtNum length = mju_sqrt(mju_dot2(axis, axis));
+  axis[0] /= length;
+  axis[1] /= length;
+  mjtNum center[2] = {0.5*(v1[0] + v0[0]), 0.5*(v1[1] + v0[1])};
+  mjtNum t = mju_dot2(query, axis) - mju_dot2(center, axis);
+  t = mju_clip(t, -length/2, length/2);
+  res[0] = center[0] + t*axis[0];
+  res[1] = center[1] + t*axis[1];
+}
+
+}  // namespace
+
+// returns point in 2D convex hull that is nearest to query
+void NearestInHull(mjtNum res[2], const mjtNum query[2],
+                   const mjtNum* points, const int* hull, int num_hull) {
+  int outside = 0;      // assume query point is inside the hull
+  mjtNum best_sqrdist;  // smallest squared distance so far
+  for (int i = 0; i < num_hull; i++) {
+    const mjtNum* v0 = points + 2 * hull[i];
+    const mjtNum* v1 = points + 2 * hull[(i + 1) % num_hull];
+
+    // edge from v0 to v1
+    mjtNum e01[2] = {v1[0] - v0[0], v1[1] - v0[1]};
+
+    // normal to the edge, pointing *into* the convex hull
+    mjtNum n01[2] = {-e01[1], e01[0]};
+
+    // if constraint is active, project to the edge, compare to best so far
+    mjtNum v0_to_query[2] = {query[0] - v0[0], query[1] - v0[1]};
+    if (mju_dot(v0_to_query, n01, 2) < 0) {
+      mjtNum projection[2];
+      ProjectToSegment2D(projection, query, v0, v1);
+      mjtNum sqrdist = mju_sqrdist2(projection, query);
+      if (!outside || (outside && sqrdist < best_sqrdist)) {
+        // first or closer candidate, copy to res
+        res[0] = projection[0];
+        res[1] = projection[1];
+        best_sqrdist = sqrdist;
+      }
+      outside = 1;
+    }
+  }
+
+  // not outside any edge, return the query point
+  if (!outside) {
+    res[0] = query[0];
+    res[1] = query[1];
+  }
+}
+
+// find the convex hull of a small set of 2D points
+int Hull2D(int* hull, int num_points, const mjtNum* points) {
+  // handle small number of points
+  if (num_points < 1) return 0;
+  hull[0] = 0;
+  if (num_points == 1) return 1;
+  if (num_points == 2) {
+    hull[1] = 1;
+    return 2;
+  }
+
+  // find the point with largest x value - must lie on hull
+  mjtNum best_x = points[0];
+  mjtNum best_y = points[1];
+  for (int i = 1; i < num_points; i++) {
+    mjtNum x = points[2*i];
+    mjtNum y = points[2*i + 1];
+
+    // accept if larger, use y value to tie-break exact equality
+    if (x > best_x || (x == best_x && y > best_y)) {
+      best_x = x;
+      best_y = y;
+      hull[0] = i;
+    }
+  }
+
+  //  Gift-wrapping algorithm takes time O(nh)
+  // TODO(benmoran) Investigate faster convex hull methods.
+  int num_hull = 1;
+  for (int i = 0; i < num_points; i++) {
+    // loop over all points, find point that is furthest outside
+    int next = -1;
+    for (int candidate = 0; candidate < num_points; candidate++) {
+      if ((next == -1) ||
+          IsEdgeOutside(points + 2*hull[num_hull - 1],
+                        points + 2*next,
+                        points + 2*candidate)) {
+        next = candidate;
+      }
+    }
+
+    // termination condition
+    if ((num_hull > 1) && (next == hull[0])) {
+      break;
+    }
+
+    // add new point
+    hull[num_hull++] = next;
+  }
+
+  return num_hull;
 }
 
 }  // namespace mjpc

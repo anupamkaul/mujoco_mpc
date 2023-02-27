@@ -47,7 +47,7 @@ include(FindOrFetch)
 find_package(Threads REQUIRED)
 
 set(MUJOCO_BUILD_EXAMPLES OFF)
-set(MUJOCO_BUILD_SIMULATE OFF)
+set(MUJOCO_BUILD_SIMULATE ON)
 set(MUJOCO_BUILD_TESTS OFF)
 set(MUJOCO_TEST_PYTHON_UTIL OFF)
 
@@ -64,16 +64,17 @@ findorfetch(
   main
   TARGETS
   mujoco::mujoco
+  mujoco::platform_ui_adapter
   EXCLUDE_FROM_ALL
 )
 
-set(MJPC_DEP_VERSION_abseil
-    8c0b94e793a66495e0b1f34a5eb26bd7dc672db0 # LTS 20220623.1
+set(MUJOCO_DEP_VERSION_abseil
+    78be63686ba732b25052be15f8d6dee891c05749 # LTS 20230125.0
     CACHE STRING "Version of `abseil` to be fetched."
 )
 
-set(MUJOCO_DEP_VERSION_glfw
-    7d5a16ce714f0b5f4efa3262de22e4d948851525 # 3.3.6
+set(MUJOCO_DEP_VERSION_glfw3
+    7482de6071d21db77a7236155da44c172a7f6c9e # 3.3.8
     CACHE STRING "Version of `glfw` to be fetched."
 )
 
@@ -139,7 +140,7 @@ findorfetch(
   GIT_REPO
   https://github.com/glfw/glfw.git
   GIT_TAG
-  ${MUJOCO_DEP_VERSION_glfw}
+  ${MUJOCO_DEP_VERSION_glfw3}
   TARGETS
   glfw
   EXCLUDE_FROM_ALL
@@ -150,6 +151,30 @@ set(BUILD_SHARED_LIBS
     CACHE BOOL "Build SHARED libraries" FORCE
 )
 unset(BUILD_SHARED_LIBS_OLD)
+
+FetchContent_Declare(
+  menagerie
+  GIT_REPOSITORY https://github.com/deepmind/mujoco_menagerie.git
+  GIT_TAG main
+)
+
+FetchContent_GetProperties(menagerie)
+if(NOT menagerie_POPULATED)
+  FetchContent_Populate(menagerie)
+endif()
+
+add_custom_target(
+  copy_menagerie_resources ALL
+  COMMAND ${CMAKE_COMMAND} -E copy_directory
+          ${menagerie_SOURCE_DIR}/shadow_hand/assets
+          ${CMAKE_CURRENT_BINARY_DIR}/tasks/hand/assets
+  COMMAND ${CMAKE_COMMAND} -E copy_directory
+          ${menagerie_SOURCE_DIR}/franka_emika_panda/assets
+          ${CMAKE_CURRENT_BINARY_DIR}/tasks/panda/assets
+  COMMAND ${CMAKE_COMMAND} -E copy_directory
+          ${menagerie_SOURCE_DIR}/unitree_a1/assets
+          ${CMAKE_CURRENT_BINARY_DIR}/tasks/quadruped/assets
+  COMMENT "Copying menagerie assets into binary directory")
 
 if(NOT TARGET lodepng)
   FetchContent_Declare(
@@ -184,6 +209,7 @@ target_link_libraries(
   threadpool
   absl::base
 )
+target_include_directories(threadpool PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/..)
 
 add_library(
   libmjpc STATIC
@@ -205,8 +231,14 @@ add_library(
   tasks/cartpole/cartpole.h
   tasks/hand/hand.cc
   tasks/hand/hand.h
-  tasks/humanoid/humanoid.cc
-  tasks/humanoid/humanoid.h
+  tasks/humanoid/stand/stand.cc
+  tasks/humanoid/stand/stand.h
+  tasks/humanoid/tracking/tracking.cc
+  tasks/humanoid/tracking/tracking.h
+  tasks/humanoid/walk/walk.cc
+  tasks/humanoid/walk/walk.h
+  tasks/panda/panda.cc
+  tasks/panda/panda.h
   tasks/particle/particle.cc
   tasks/particle/particle.h
   tasks/quadrotor/quadrotor.cc
@@ -224,6 +256,8 @@ add_library(
   planners/include.h
   planners/cost_derivatives.cc
   planners/cost_derivatives.h
+  planners/linear_solve.cc
+  planners/linear_solve.h
   planners/model_derivatives.cc
   planners/model_derivatives.h
   planners/sampling/planner.cc
@@ -247,6 +281,8 @@ add_library(
   planners/ilqg/policy.cc
   planners/ilqg/policy.h
   planners/ilqg/settings.h
+  planners/ilqs/planner.cc
+  planners/ilqs/planner.h
   norm.cc
   norm.h
   task.cc
@@ -256,22 +292,22 @@ set_target_properties(libmjpc PROPERTIES OUTPUT_NAME mjpc)
 target_compile_options(libmjpc PUBLIC ${MJPC_COMPILE_OPTIONS})
 target_link_libraries(
   libmjpc
+  absl::flat_hash_map
   absl::random_random
   mujoco::mujoco
   threadpool
   Threads::Threads
 )
-target_include_directories(libmjpc PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(libmjpc PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/..)
 
 add_executable(
   mjpc
-  glfw_dispatch.cc
-  glfw_dispatch.h
+  app.cc
+  app.h
   main.cc
   simulate.cc
   simulate.h
-  uitools.cc
-  uitools.h
+  $<TARGET_OBJECTS:mujoco::platform_ui_adapter>
 )
 target_link_libraries(
   mjpc
@@ -283,10 +319,11 @@ target_link_libraries(
   libmjpc
   lodepng
   mujoco::mujoco
+  mujoco::platform_ui_adapter
   threadpool
   Threads::Threads
 )
-target_include_directories(mjpc PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_include_directories(mjpc PRIVATE ${CMAKE_CURRENT_SOURCE_DIR}/..)
 target_compile_options(mjpc PUBLIC ${MJPC_COMPILE_OPTIONS})
 target_link_options(mjpc PRIVATE ${MJPC_LINK_OPTIONS})
 target_compile_definitions(mjpc PRIVATE MJSIMULATE_STATIC)

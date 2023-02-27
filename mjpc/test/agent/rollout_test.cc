@@ -14,35 +14,54 @@
 
 #include "gtest/gtest.h"
 #include <mujoco/mujoco.h>
-#include "task.h"
-#include "test/load.h"
-#include "trajectory.h"
-#include "utilities.h"
+#include "mjpc/task.h"
+#include "mjpc/test/load.h"
+#include "mjpc/trajectory.h"
+#include "mjpc/utilities.h"
 
 namespace mjpc {
 namespace {
+
+struct ParticleCopyTestTask : public mjpc::Task {
+  std::string Name() const override {return ""; }
+  std::string XmlPath() const override { return ""; }
+  void Residual(const mjModel* model, const mjData* data,
+                double* residual) const override {
+    mju_copy(residual, data->qpos, model->nq);
+    mju_copy(residual + model->nq, data->qvel, model->nv);
+  }
+};
+
+ParticleCopyTestTask task;
+
+extern "C" {
+void sensor(const mjModel* m, mjData* d, int stage);
+}
+
+// sensor callback
+void sensor(const mjModel* model, mjData* data, int stage) {
+  if (stage == mjSTAGE_ACC) {
+    task.Residual(model, data, data->sensordata);
+  }
+}
+
 // test trajectory rollout with PD controller on particle task
 TEST(RolloutTest, Particle) {
   // load model
   mjModel* model = LoadTestModel("particle_task.xml");
+  task.Reset(model);
 
   // create data
   mjData* data = mj_makeData(model);
 
-  // set data
-  mj_forward(model, data);
-
-  // residual
-  ResidualFunction* state_residual = [](const double* params,
-                                        const mjModel* model,
-                                        const mjData* data, double* residual) {
-    mju_copy(residual, data->qpos, model->nq);
-    mju_copy(residual + model->nq, data->qvel, model->nv);
-  };
-  mjpc::Task task;
-  task.Set(model, state_residual, mjpc::NullTransition);
   ASSERT_EQ(model->nq + model->nv, task.num_residual);
   int num_residual = task.num_residual;
+
+  // set callback
+  mjcb_sensor = sensor;
+
+  // set data
+  mj_forward(model, data);
 
   // policy
   double position_goal[2] = {0.1, 0.1};
@@ -84,7 +103,7 @@ TEST(RolloutTest, Particle) {
 
   // rollout feedback policy
   trajectory.Rollout(feedback_policy, &task, model, data, state, time, mocap,
-                     horizon);
+                     NULL, horizon);
 
   // test final state
   double position_error[2];
@@ -110,6 +129,9 @@ TEST(RolloutTest, Particle) {
   // delete model + data
   mj_deleteData(data);
   mj_deleteModel(model);
+
+  // unset callback
+  mjcb_sensor = nullptr;
 }
 
 }  // namespace

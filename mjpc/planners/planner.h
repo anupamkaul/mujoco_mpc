@@ -16,11 +16,12 @@
 #define MJPC_PLANNERS_OPTIMIZER_H_
 
 #include <mujoco/mujoco.h>
-#include "states/state.h"
-#include "task.h"
-#include "threadpool.h"
-#include "trajectory.h"
-#include "utilities.h"
+
+#include "mjpc/states/state.h"
+#include "mjpc/task.h"
+#include "mjpc/threadpool.h"
+#include "mjpc/trajectory.h"
+#include "mjpc/utilities.h"
 
 namespace mjpc {
 
@@ -48,7 +49,7 @@ class Planner {
   virtual void OptimizePolicy(int horizon, ThreadPool& pool) = 0;
 
   // compute trajectory using nominal policy
-  virtual void NominalTrajectory(int horizon) = 0;
+  virtual void NominalTrajectory(int horizon, ThreadPool& pool) = 0;
 
   // set action from policy
   virtual void ActionFromPolicy(double* action, const double* state,
@@ -65,9 +66,8 @@ class Planner {
 
   // planner-specific plots
   virtual void Plots(mjvFigure* fig_planner, mjvFigure* fig_timer,
-                     int planning) = 0;
+                     int planner_shift, int timer_shift, int planning) = 0;
 
- protected:
   std::vector<UniqueMjData> data_;
   void ResizeMjData(const mjModel* model, int num_threads);
 };

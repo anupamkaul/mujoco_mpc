@@ -17,9 +17,9 @@
 
 #include <vector>
 
-#include "planners/policy.h"
-#include "task.h"
-#include "trajectory.h"
+#include "mjpc/planners/policy.h"
+#include "mjpc/task.h"
+#include "mjpc/trajectory.h"
 
 namespace mjpc {
 
@@ -60,6 +60,7 @@ class iLQGPolicy : public Policy {
   mutable std::vector<double> feedback_gain_scratch;
   mutable std::vector<double> state_interp;
   int representation;
+  double feedback_scaling;
 };
 
 }  // namespace mjpc

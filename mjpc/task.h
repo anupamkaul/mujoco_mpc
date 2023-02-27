@@ -15,10 +15,12 @@
 #ifndef MJPC_TASK_H_
 #define MJPC_TASK_H_
 
+#include <string>
 #include <vector>
 
+#include <mujoco/mjvisualize.h>
 #include <mujoco/mujoco.h>
-#include "norm.h"
+#include "mjpc/norm.h"
 
 namespace mjpc {
 
@@ -26,49 +28,40 @@ namespace mjpc {
 inline constexpr double kRiskNeutralTolerance = 1.0e-6;
 
 // maximum cost terms
-inline constexpr int kMaxCostTerms = 30;
+inline constexpr int kMaxCostTerms = 35;
 
-using ResidualFunction = void(const double* parameters, const mjModel* model,
-                              const mjData* data, double* residual);
-using TransitionFunction = int(int state, const mjModel* model, mjData* data);
-
-// contains information for computing costs
 class Task {
  public:
   // constructor
   Task() = default;
-
-  // destructor
-  ~Task() = default;
+  virtual ~Task() = default;
 
   // ----- methods ----- //
 
-  // initialize task from model
-  void Set(const mjModel* model, ResidualFunction* residual,
-           TransitionFunction* transition);
+  virtual void Residual(const mjModel* model, const mjData* data,
+                        double* residual) const = 0;
+  // scene is optional and may be passed as nullptr (e.g., in library mode):
+  virtual void Transition(
+    const mjModel* model, mjData* data, mjvScene* scene) {}
 
   // get information from model
-  void GetFrom(const mjModel* model);
+  virtual void Reset(const mjModel* model);
 
   // compute cost terms
-  void CostTerms(double* terms, const double* residual) const;
+  void CostTerms(double* terms, const double* residual,
+                 bool weighted = true) const;
 
   // compute weighted cost
   double CostValue(const double* residual) const;
 
-  // compute residuals
-  void Residuals(const mjModel* m, const mjData* d, double* residuals) const;
+  virtual std::string Name() const = 0;
+  virtual std::string XmlPath() const = 0;
 
-  // apply transition function
-  void Transition(const mjModel* m, mjData* d);
-
-  int id = 0;             // task ID
-  int transition_state;   // state
-  int transition_status;  // status
+  int stage;              // stage
 
   // cost parameters
   int num_residual;
-  int num_cost;
+  int num_term;
   int num_trace;
   std::vector<int> dim_norm_residual;
   std::vector<int> num_norm_parameter;
@@ -78,26 +71,11 @@ class Task {
   double risk;
 
   // residual parameters
-  std::vector<double> residual_parameters;
+  std::vector<double> parameters;
 
  private:
   // initial residual parameters from model
   void SetFeatureParameters(const mjModel* model);
-
-  // residual function
-  ResidualFunction* residual_;
-
-  // transition function
-  TransitionFunction* transition_;
-};
-
-extern int NullTransition(int state, const mjModel* model, mjData* data);
-
-struct TaskDefinition {
-  const char* name;
-  const char* xml_path;
-  ResidualFunction* residual;
-  TransitionFunction* transition = &NullTransition;
 };
 
 }  // namespace mjpc
